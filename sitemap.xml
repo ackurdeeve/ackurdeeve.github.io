@@ -2,6 +2,20 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://www.ackurdeeve.com/201902/SSOAuthinExcel-2/</loc>
+    
+    <lastmod>2019-06-03T16:23:28.338Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://www.ackurdeeve.com/201902/SSOAuthinExcel/</loc>
+    
+    <lastmod>2019-06-03T16:23:13.638Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://www.ackurdeeve.com/201905/dota2chess-roundtest/</loc>
     
     <lastmod>2019-05-20T05:11:50.403Z</lastmod>
@@ -257,20 +271,6 @@
     <loc>https://www.ackurdeeve.com/201902/dota2chesshero/</loc>
     
     <lastmod>2019-03-30T03:41:08.450Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://www.ackurdeeve.com/201902/SSOAuthinExcel/</loc>
-    
-    <lastmod>2019-03-30T03:41:08.221Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://www.ackurdeeve.com/201902/SSOAuthinExcel-2/</loc>
-    
-    <lastmod>2019-03-30T03:41:08.191Z</lastmod>
     
   </url>
   
