@@ -1,0 +1,314 @@
+/*body {*/
+    /*background: #111111;*/
+    /*color: white;*/
+    /*width: 100%;*/
+    /*font-family: monospace, serif;*/
+    /*font-size: 12px;*/
+/*}*/
+
+table {
+    width: 50 em;
+    border-spacing: 5px;
+    float: none; /**/
+    margin: 0 auto;
+    border: azure;
+    height: auto;
+}
+
+td {
+    padding: 2px;
+    vertical-align: top;
+    position: relative;
+    font-family: monospace, serif;
+    font-size: 0.8em;
+    height: 6em;
+    width: auto;
+}
+
+a {
+    color: white;
+}
+
+.item > img {
+    border: 2px solid #444444;
+    padding: auto;
+}
+
+.desc {
+    background: #222222;
+    color: white;
+    padding: 1em;
+    top: auto;
+}
+
+.desc1 {
+    background: #bcd2e0;
+    color: white;
+    padding: 0.2em;
+}
+
+.tier1 > img {
+    border: 2px solid lime;
+}
+
+.tier2 > img {
+    border: 2px solid yellow;
+}
+
+.tier3 > img {
+    border: 2px solid orange;
+}
+
+.tier4 > img {
+    border: 2px solid red;
+}
+
+.dupe {
+    position: absolute;
+    top: 5px;
+    right: 3px;
+    font-weight: bold;
+    color: white;
+    background: rgba(255, 0, 0, 0.75);
+    margin: 2px;
+    height: 8px;
+    width: 8px;
+    border-radius: 4px;
+}
+
+.num {
+    position: absolute;
+    top: 3;
+    right: 3;
+    font-weight: bold;
+    color: white;
+    padding: 2;
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 4px;
+}
+
+.bg-60px_Assault_Cuirass_icon {
+    width: 60px; height: 44px;
+    background: url('../images/items_sprites.png') -60px -0;
+}
+
+.bg-60px_Battle_Fury_icon {
+    width: 60px; height: 43px;
+    background: url('../images/items_sprites.png') -120px -309px;
+}
+
+.bg-60px_Blade_Mail_icon {
+    width: 60px; height: 44px;
+    background: url('../images/items_sprites.png') -0 -45px;
+}
+
+.bg-60px_Blades_of_Attack_icon {
+    width: 60px; height: 44px;
+    background: url('../images/items_sprites.png') -60px -45px;
+}
+
+.bg-60px_Blight_Stone_icon {
+    width: 60px; height: 44px;
+    background: url('../images/items_sprites.png') -120px -0;
+}
+
+.bg-60px_Broadsword_icon {
+    width: 60px; height: 44px;
+    background: url('../images/items_sprites.png') -120px -44px;
+}
+
+.bg-60px_Chainmail_icon {
+    width: 60px; height: 44px;
+    background: url('../images/items_sprites.png') -0 -89px;
+}
+
+.bg-60px_Cloak_icon {
+    width: 60px; height: 44px;
+    background: url('../images/items_sprites.png') -60px -89px;
+}
+
+.bg-60px_Crown_icon {
+    width: 60px; height: 44px;
+    background: url('../images/items_sprites.png') -120px -89px;
+}
+
+.bg-60px_Crystalys_icon {
+    width: 60px; height: 44px;
+    background: url('../images/items_sprites.png') -0 -133px;
+}
+
+.bg-60px_Daedalus_icon {
+    width: 60px; height: 44px;
+    background: url('../images/items_sprites.png') -60px -133px;
+}
+
+.bg-60px_Dagon_1_icon {
+    width: 60px; height: 45px;
+    background: url('../images/items_sprites.png') -0 -0;
+}
+
+.bg-60px_Demon_Edge_icon {
+    width: 60px; height: 44px;
+    background: url('../images/items_sprites.png') -120px -133px;
+}
+
+.bg-60px_Desolator_icon {
+    width: 60px; height: 44px;
+    background: url('../images/items_sprites.png') -180px -0;
+}
+
+.bg-60px_Divine_Rapier_icon {
+    width: 60px; height: 44px;
+    background: url('../images/items_sprites.png') -180px -44px;
+}
+
+.bg-60px_Heart_of_Tarrasque_icon {
+    width: 60px; height: 44px;
+    background: url('../images/items_sprites.png') -180px -88px;
+}
+
+.bg-60px_Hood_of_Defiance_icon {
+    width: 60px; height: 44px;
+    background: url('../images/items_sprites.png') -180px -132px;
+}
+
+.bg-60px_Hyperstone_icon {
+    width: 60px; height: 44px;
+    background: url('../images/items_sprites.png') -0 -177px;
+}
+
+.bg-60px_Javelin_icon {
+    width: 60px; height: 44px;
+    background: url('../images/items_sprites.png') -60px -177px;
+}
+
+.bg-60px_Kaya_icon {
+    width: 60px; height: 44px;
+    background: url('../images/items_sprites.png') -120px -177px;
+}
+
+.bg-60px_Maelstrom_icon {
+    width: 60px; height: 44px;
+    background: url('../images/items_sprites.png') -180px -177px;
+}
+
+.bg-60px_Mask_of_Madness_icon {
+    width: 60px; height: 44px;
+    background: url('../images/items_sprites.png') -240px -0;
+}
+
+.bg-60px_Mithril_Hammer_icon {
+    width: 60px; height: 44px;
+    background: url('../images/items_sprites.png') -240px -44px;
+}
+
+.bg-60px_Mjollnir_icon {
+    width: 60px; height: 44px;
+    background: url('../images/items_sprites.png') -240px -88px;
+}
+
+.bg-60px_Monkey_King_Bar_icon {
+    width: 60px; height: 44px;
+    background: url('../images/items_sprites.png') -240px -132px;
+}
+
+.bg-60px_Moon_Shard_icon {
+    width: 60px; height: 44px;
+    background: url('../images/items_sprites.png') -240px -176px;
+}
+
+.bg-60px_Morbid_Mask_icon {
+    width: 60px; height: 44px;
+    background: url('../images/items_sprites.png') -0 -221px;
+}
+
+.bg-60px_Perseverance_icon {
+    width: 60px; height: 44px;
+    background: url('../images/items_sprites.png') -60px -221px;
+}
+
+.bg-60px_Mystic_Staff_icon {
+    width: 60px; height: 44px;
+    background: url('../images/items_sprites.png') -120px -221px;
+}
+
+.bg-60px_Platemail_icon {
+    width: 60px; height: 44px;
+    background: url('../images/items_sprites.png') -180px -221px;
+}
+
+.bg-60px_Quarterstaff_icon {
+    width: 60px; height: 44px;
+    background: url('../images/items_sprites.png') -240px -221px;
+}
+
+.bg-60px_Reaver_icon {
+    width: 60px; height: 44px;
+    background: url('../images/items_sprites.png') -300px -0;
+}
+
+.bg-60px_Refresher_Orb_icon {
+    width: 60px; height: 44px;
+    background: url('../images/items_sprites.png') -300px -44px;
+}
+
+.bg-60px_Ring_of_Health_icon {
+    width: 60px; height: 44px;
+    background: url('../images/items_sprites.png') -300px -88px;
+}
+
+.bg-60px_Ring_of_Regen_icon {
+    width: 60px; height: 44px;
+    background: url('../images/items_sprites.png') -300px -132px;
+}
+
+.bg-60px_Robe_of_the_Magi_icon {
+    width: 60px; height: 44px;
+    background: url('../images/items_sprites.png') -300px -176px;
+}
+
+.bg-60px_Sacred_Relic_icon {
+    width: 60px; height: 44px;
+    background: url('../images/items_sprites.png') -300px -220px;
+}
+
+.bg-60px_Scythe_of_Vyse_icon {
+    width: 60px; height: 44px;
+    background: url('../images/items_sprites.png') -0 -265px;
+}
+
+.bg-60px_Shiva\'s_Guard_icon {
+    width: 60px; height: 44px;
+    background: url('../images/items_sprites.png') -60px -265px;
+}
+
+.bg-60px_Staff_of_Wizardry_icon {
+    width: 60px; height: 44px;
+    background: url('../images/items_sprites.png') -120px -265px;
+}
+
+.bg-60px_Stout_Shield_icon {
+    width: 60px; height: 44px;
+    background: url('../images/items_sprites.png') -180px -265px;
+}
+
+.bg-60px_Ultimate_Orb_icon {
+    width: 60px; height: 44px;
+    background: url('../images/items_sprites.png') -240px -265px;
+}
+
+.bg-60px_Vanguard_icon {
+    width: 60px; height: 44px;
+    background: url('../images/items_sprites.png') -300px -265px;
+}
+
+.bg-60px_Vitality_Booster_icon {
+    width: 60px; height: 44px;
+    background: url('../images/items_sprites.png') -0 -309px;
+}
+
+.bg-60px_Void_Stone_icon {
+    width: 60px; height: 44px;
+    background: url('../images/items_sprites.png') -60px -309px;
+}
+

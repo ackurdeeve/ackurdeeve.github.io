@@ -1,0 +1,686 @@
+<!DOCTYPE html><html><head><meta name="generator" content="Hexo 3.8.0">
+    <title>畅游星海| 刀塔自走棋物品合成查询工具</title>
+    <link rel="dns-prefetch" href="https://www.ackurdeeve.com">
+    <link rel="stylesheet" href="css/bower.css" type="text/css">
+    <link rel="stylesheet" href="css/index.css" type="text/css">
+    <link rel="stylesheet" href="css/dota2chessitem.css" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Lora|Karla|Iceland" rel="stylesheet">
+    <link rel="icon" href="img/omega.png">
+    <meta name="description" content="刀塔自走棋物品合成列表，合成高级装备所需的低级装备及相应的属性。">
+    <meta http-equiv="content-type" content="text/html" charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+    <meta name="renderer" content="webkit|ie-comp|ie-stand">
+    <meta name="apple-mobile-web-app-capable" content="畅游星海">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no,email=no,adress=no">
+    <meta name="browsermode" content="application">
+    <meta name="screen-orientation" content="portrait">
+    <meta name="keywords" content="Steam, Dota2, 自走棋, 自走棋英雄, 棋子图鉴, 羁绊加成, 物品合成, 棋子技能, 棋子职业, 种族技能">
+    <meta name="robots" content="all">
+    <meta name="google" content="all">
+    <meta name="googlebot" content="all">
+    <meta name="verify" content="all">
+
+    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <script>
+        (function (i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r;
+            i[r] = i[r] || function () {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date();
+            a = s.createElement(o),
+                m = s.getElementsByTagName(o)[0];
+            a.async = 1;
+            a.src = g;
+            m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+        ga('create', 'UA-134098439-1', 'auto');
+        ga('send', 'pageview');
+    </script>
+
+    <script>
+        var _hmt = _hmt || [];
+        (function () {
+            var hm = document.createElement("script");
+            hm.src = "https://hm.baidu.com/hm.js?1752145131f269b0b11c73e84c4cb221";
+            var s = document.getElementsByTagName("script")[0];
+            s.parentNode.insertBefore(hm, s);
+        })();
+    </script>
+
+
+    <script>
+        (function () {
+            var bp = document.createElement('script');
+            var curProtocol = window.location.protocol.split(':')[0];
+            if (curProtocol === 'https') {
+                bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+            } else {
+                bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+            }
+            var s = document.getElementsByTagName("script")[0];
+            s.parentNode.insertBefore(bp, s);
+        })();
+    </script>
+
+
+    <script language="Javascript">
+        document.onselectstart = new Function("event.returnValue=false");
+        document.keydown = function (e) {
+            if (e.ctrlKey && (e.keyCode == 65 || e.keyCode == 67)) {
+                return false;
+            }
+        };
+    </script>
+
+    <!--<div class="hide">-->
+    <!--<script type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? "https://" : "http://");-->
+    <!--document.write(unescape("%3Cspan id='cnzz_stat_icon_1276110270'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s23.cnzz.com/z_stat.php%3Fid%3D1276110270' type='text/javascript'%3E%3C/script%3E"));-->
+    <!--</script>-->
+    <!--</div>-->
+
+    <style type="text/css">
+        html {
+            -ms-user-select: none;
+            -moz-user-select: none;
+            -webkit-user-select: none;
+        }
+    </style>
+</head>
+<body>
+<header class="header">
+    <div class="header__login-left">
+        <a href="https://www.ackurdeeve.com/dota2chessbuilds.html" class="btn-metal-small">
+            <span></span>
+            <i class="ion-settings"></i> 模拟阵容
+        </a>
+        <a href="https://www.ackurdeeve.com/dota2chessheroes.html" class="btn-metal-small">
+            <span></span>
+            <i class="ion-outlet"></i> 英雄列表
+        </a>
+        <a href="https://www.ackurdeeve.com/dota2chessitems.html" class="btn-metal-small">
+            <span></span>
+            <i class="ion-hammer"></i> 合成列表
+        </a>
+        <a href="https://dota2chess.ackurdeeve.com/trainer" class="btn-metal-small" rel="external nofollow noopener noreferrer" target="_blank">
+            <span></span>
+            <i class="ion-android-camera"></i> 对战监控
+        </a>
+        <a href="https://dota2chess.ackurdeeve.com/roundtest" class="btn-metal-small" rel="external nofollow noopener noreferrer" target="_blank">
+            <span></span>
+            <i class="ion-trophy"></i> 对战模拟
+        </a>
+    </div>
+    <div class="header__login">
+        <div>
+            <a href="javascript:;" class="hamburger">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+            </a>
+        </div>
+
+        <div>
+            <a href="javascript:;" class="hamburger-login">
+                <i class="ion-gear-a"></i>
+            </a>
+            <div class="menu-hamburger-login">
+                <a href="/201903/dota2chessguide190306-2/" class="btn-metal-small" target="_blank">
+                    <span></span>
+                    <i class="ion-help-buoy"></i> 常用阵容
+                </a>
+                <a href="https://dota2chess.com/login-with-steam" class="btn-metal-small" target="_blank" rel="external nofollow noopener noreferrer">
+                    <span></span>
+                    <i class="ion-steam"></i> 登录服务器
+                </a>
+                <a href="https://www.ackurdeeve.com" class="btn-metal-small" target="_blank">
+                    <span></span>
+                    <i class="ion-folder"></i> 返回主页
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="content content--wide">
+        <div class="content content--wide">
+            <a class="logo" href="/" target="_blank">
+                <img src="images/logo-home-yellow.png">
+            </a>
+        </div>
+    </div>
+
+    <div class="header__login">
+        <div>
+            <a href="javascript:;" class="hamburger">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+            </a>
+        </div>
+
+    </div>
+    <ul class="menu-hamburger">
+        <li>
+            <a href="/" class="btn-metal-small " target="_blank">
+                <span></span>
+                <i class="ion-folder"></i> 返回主页
+            </a>
+        </li>
+        <li>
+            <a href="https://dota2chess.ackurdeeve.com/authpage" class="btn-metal-small" rel="external nofollow noopener noreferrer" target="_blank">
+                <span></span>
+                <i class="ion-trophy"></i> 对战模拟
+            </a>
+        </li>
+        <li>
+            <a href="dota2chessbuilds.html" class="btn-metal-small">
+                <span></span>
+                <i class="ion-settings"></i> 模拟阵容
+            </a>
+        </li>
+        <li>
+            <a href="dota2chessheroes.html" class="btn-metal-small">
+                <span></span>
+                <i class="ion-outlet"></i> 英雄列表
+            </a>
+        </li>
+        <li>
+            <a href="dota2chessitems.html" class="btn-metal-small">
+                <span></span>
+                <i class="ion-hammer"></i> 合成列表
+            </a>
+        </li>
+        <li>
+            <a href="/201903/dota2chessguide190306-2/" class="btn-metal-small" target="_blank">
+                <span></span>
+                <i class="ion-help-buoy"></i> 常用阵容
+            </a>
+        </li>
+        <li>
+            <a href="/categories/Dota2/" class="btn-metal-small" target="_blank">
+                <span></span>
+                <i class="ion-wrench"></i> 自走棋专区
+            </a>
+        </li>
+    </ul>
+</header>
+<div class="page-content">
+    <section class="section section--dark">
+        <span class="outer-bg outer-bg--black"></span>
+        <span class="outer"></span>
+        <span class="inner"></span>
+        <nav class="menu-home">
+            <ul>
+                <li>
+                    <a href="dota2chessitems.html" class="btn-metal">
+                        <span class="outer"></span>
+                        <span class="inner"></span>
+                        自走棋物品合成 <span class="inner inner--last"></span>
+                        <span class="outer outer--last"></span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        <br>
+        <table>
+            <tbody><tr>
+                <td class="item">
+                    <div class="bg-60px_Mask_of_Madness_icon" title="疯狂面具"></div>
+                    <div class="num">2</div>
+                </td>
+                <td class="tier1">
+                    <div class="bg-60px_Morbid_Mask_icon" title="吸血面具 生命偷取+5%"></div>
+                </td>
+                <td class="tier1">
+                    <div class="bg-60px_Quarterstaff_icon" title="短棍 攻击力+5，攻击速度+10"></div>
+                    <!--<div class="dupe">&nbsp;</div>-->
+                </td>
+                <td></td>
+                <td class="desc">
+                    生命偷取 +10%<br>
+                    攻击速度 +30%，沉默自己<br>
+                </td>
+            </tr>
+            <tr>
+                <td class="item">
+                    <div class="bg-60px_Perseverance_icon" title="坚韧球"></div>
+                    <div class="num">2</div>
+                </td>
+                <td class="tier1">
+                    <div class="bg-60px_Ring_of_Health_icon" title="治疗指环 生命恢复+10"></div>
+                    <!--<div class="dupe">&nbsp;</div>-->
+                </td>
+                <td class="tier1">
+                    <div class="bg-60px_Void_Stone_icon" title="虚无宝石 攻击时+100% 魔法获取"></div>
+                    <!--<div class="dupe">&nbsp;</div>-->
+                </td>
+                <td></td>
+                <td class="desc">
+                    HP恢复 +10<br>
+                    攻击时魔法恢复 +100%
+                </td>
+            </tr>
+            <tr>
+                <td class="item">
+                    <div class="bg-60px_Hood_of_Defiance_icon" title="挑战头巾"></div>
+                    <div class="num">3</div>
+                </td>
+                <td class="tier1">
+                    <div class="bg-60px_Ring_of_Regen_icon" title="恢复戒指 生命恢复+5"></div>
+                </td>
+                <td class="tier1">
+                    <div class="bg-60px_Cloak_icon" title="抗魔斗篷 魔法抗性+15"></div>
+                </td>
+                <td class="tier1">
+                    <div class="bg-60px_Ring_of_Health_icon" title="治疗指环 生命恢复+10"></div>
+                    <!--<div class="dupe">&nbsp;</div>-->
+                </td>
+                <td class="desc">
+                    HP恢复+10<br>
+                    魔法抗性+30
+                </td>
+            </tr>
+            <tr>
+                <td class="item">
+                    <div class="bg-60px_Blade_Mail_icon" title="刃甲"></div>
+                    <div class="num">3</div>
+                </td>
+                <td class="tier1">
+                    <div class="bg-60px_Chainmail_icon" title="锁子甲 护甲+5"></div>
+                    <!--<div class="dupe">&nbsp;</div>-->
+                </td>
+                <td class="tier2">
+                    <div class="bg-60px_Broadsword_icon" title="阔剑  攻击力+20"></div>
+                    <!--<div class="dupe">&nbsp;</div>-->
+                </td>
+                <td></td>
+                <td class="desc">
+                    护甲 +5<br>
+                    攻击力 +10<br>
+                    主动技：开启尖刺，将收到的所有伤害反弹为100%的纯粹伤害，持续4秒。
+                </td>
+            </tr>
+            <tr>
+                <td class="item">
+                    <div class="bg-60px_Crystalys_icon" title="水晶剑"></div>
+                    <div class="num">3</div>
+                </td>
+                <td class="tier1">
+                    <div class="bg-60px_Blades_of_Attack_icon" title="攻击之爪"></div>
+                </td>
+                <td class="tier2">
+                    <div class="bg-60px_Broadsword_icon" title="阔剑  攻击力+20"></div>
+                    <!--<div class="dupe">&nbsp;</div>-->
+                </td>
+                <td></td>
+                <td class="desc">
+                    攻击力 +15<br>
+                    15% 几率造成 1.5x 伤害
+                </td>
+            </tr>
+            <tr>
+                <td class="item">
+                    <div class="bg-60px_Kaya_icon" title="慧光"></div>
+                    <div class="num">3</div>
+                </td>
+                <td class="tier1">
+                    <div class="bg-60px_Robe_of_the_Magi_icon" title="法师长袍 敌方目标魔法抗性-30 "></div>
+                </td>
+                <td class="tier2">
+                    <div class="bg-60px_Staff_of_Wizardry_icon" title="魔力法杖 敌方目标魔法抗性-30 "></div>
+                    <!--<div class="dupe">&nbsp;</div>-->
+                </td>
+                <td></td>
+                <td class="desc">
+                    目标魔法抗性 -100
+                </td>
+            </tr>
+            <tr>
+                <td class="item">
+                    <div class="bg-60px_Dagon_1_icon" title="达贡之神力"></div>
+                    <div class="num">3</div>
+                </td>
+                <td class="tier1">
+                    <div class="bg-60px_Crown_icon" title="王冠 受到攻击时获得的魔法+50%"></div>
+                </td>
+                <td class="tier2">
+                    <div class="bg-60px_Staff_of_Wizardry_icon" title="魔力法杖 敌方目标魔法抗性-30 "></div>
+                    <!--<div class="dupe">&nbsp;</div>-->
+                </td>
+                <td></td>
+                <td class="desc">
+                    被攻击的敌人魔法抗性 -150 ，造成伤害时获得的法力值+50%<br>
+                    自动施法: 对随机敌人造成800伤害
+                </td>
+            </tr>
+            <tr>
+                <td class="item">
+                    <div class="bg-60px_Vanguard_icon" title="先锋盾"></div>
+                    <div class="num">4</div>
+                </td>
+                <td class="tier1">
+                    <div class="bg-60px_Stout_Shield_icon" title="圆盾 有100%几率格挡10点伤害"></div>
+                </td>
+                <td class="tier1">
+                    <div class="bg-60px_Ring_of_Health_icon" title="治疗指环 生命恢复+10"></div>
+                    <!--<div class="dupe">&nbsp;</div>-->
+                </td>
+                <td class="tier2">
+                    <div class="bg-60px_Vitality_Booster_icon" title="活力之球 最大生命值+250"></div>
+                    <!--<div class="dupe">&nbsp;</div>-->
+                </td>
+                <td class="desc">
+                    最大HP +250<br>
+                    HP恢复+10<br>
+                    50%几率抵挡50伤害
+                </td>
+            </tr>
+            <tr>
+                <td class="item">
+                    <div class="bg-60px_Maelstrom_icon" title="漩涡"></div>
+                    <div class="num">4</div>
+                </td>
+                <td class="tier2">
+                    <div class="bg-60px_Javelin_icon" title="标枪 攻击力+15"></div>
+                    <!--<div class="dupe">&nbsp;</div>-->
+                </td>
+                <td class="tier2">
+                    <div class="bg-60px_Mithril_Hammer_icon" title="秘银锤 攻击力+15"></div>
+                    <!--<div class="dupe">&nbsp;</div>-->
+                </td>
+                <td></td>
+                <td class="desc">
+                    攻击力 +25<br>
+                    攻击时有 25% 几率释放闪电箭对最多3个敌人分别造成100伤害
+                </td>
+            </tr>
+            <tr>
+                <td class="item">
+                    <div class="bg-60px_Refresher_Orb_icon" title="刷新球"></div>
+                    <div class="num">4</div>
+                </td>
+                <td class="item">
+                    <div class="bg-60px_Perseverance_icon" title="坚韧球"></div>
+                </td>
+                <td class="item">
+                    <div class="bg-60px_Perseverance_icon" title="坚韧球"></div>
+                </td>
+                <td></td>
+                <td class="desc">
+                    HP 恢复 +20<br>
+                    攻击时魔法恢复 +200%<br>
+                    每30s重置技能CD
+                </td>
+            </tr>
+            <tr>
+                <td class="item">
+                    <div class="bg-60px_Desolator_icon" title="黯灭"></div>
+                    <div class="num">5</div>
+                </td>
+                <td class="tier1">
+                    <div class="bg-60px_Blight_Stone_icon" title="枯萎之石"></div>
+                </td>
+                <td class="tier2">
+                    <div class="bg-60px_Mithril_Hammer_icon" title="秘银锤 攻击力+15"></div>
+                    <!--<div class="dupe">&nbsp;</div>-->
+                </td>
+                <td class="tier2">
+                    <div class="bg-60px_Mithril_Hammer_icon" title="秘银锤 攻击力+15"></div>
+                    <!--<div class="dupe">&nbsp;</div>-->
+                </td>
+                <td class="desc">
+                    攻击力 +30<br>
+                    敌方护甲 -15
+                </td>
+            </tr>
+            <tr>
+                <td class="item">
+                    <div class="bg-60px_Assault_Cuirass_icon" title="强袭胸甲"></div>
+                    <div class="num">6</div>
+                </td>
+                <td class="tier1">
+                    <div class="bg-60px_Chainmail_icon" title="锁子甲 护甲+5"></div>
+                    <!--<div class="dupe">&nbsp;</div>-->
+                </td>
+                <td class="tier2">
+                    <div class="bg-60px_Platemail_icon" title="板甲 护甲+10 "></div>
+                    <!--<div class="dupe">&nbsp;</div>-->
+                </td>
+                <td class="tier3">
+                    <div class="bg-60px_Hyperstone_icon" title="振奋宝石 攻击速度+30"></div>
+                    <!--<div class="dupe">&nbsp;</div>-->
+                </td>
+                <td class="desc">
+                    光环: 1格以内友方英雄护甲 +10 攻击速度 +10 <br>
+                    1格以内敌方英雄护甲 -10 攻击速度 -10
+                </td>
+            </tr>
+            <tr>
+                <td class="item">
+                    <div class="bg-60px_Moon_Shard_icon" title="银月之晶"></div>
+                    <div class="num">6</div>
+                </td>
+                <td class="tier3">
+                    <div class="bg-60px_Hyperstone_icon" title="振奋宝石 攻击速度+30"></div>
+                    <!--<div class="dupe">&nbsp;</div>-->
+                </td>
+                <td class="tier3">
+                    <div class="bg-60px_Hyperstone_icon" title="振奋宝石 攻击速度+30"></div>
+                    <!--<div class="dupe">&nbsp;</div>-->
+                </td>
+                <td></td>
+                <td class="desc">
+                    攻击速度 +70
+                </td>
+            </tr>
+            <tr>
+                <td class="item">
+                    <div class="bg-60px_Monkey_King_Bar_icon" title="金箍棒"></div>
+                    <div class="num">6</div>
+                </td>
+                <td class="tier1">
+                    <div class="bg-60px_Quarterstaff_icon" title="短棍 攻击力+5，攻击速度+10"></div>
+                    <!--<div class="dupe">&nbsp;</div>-->
+                </td>
+                <td class="tier2">
+                    <div class="bg-60px_Javelin_icon" title="标枪 攻击力+15"></div>
+                    <!--<div class="dupe">&nbsp;</div>-->
+                </td>
+                <td class="tier3">
+                    <div class="bg-60px_Demon_Edge_icon" title="恶魔刀锋 攻击力+30"></div>
+                    <!--<div class="dupe">&nbsp;</div>-->
+                </td>
+                <td class="desc">
+                    攻击力 +80<br>
+                    攻击速度 +10<br>
+                    忽略敌方闪避
+                </td>
+            </tr>
+            <tr>
+                <td class="item">
+                    <div class="bg-60px_Shiva's_Guard_icon" title="希瓦的守护"></div>
+                    <div class="num">6</div>
+                </td>
+                <td class="tier2">
+                    <div class="bg-60px_Platemail_icon" title="板甲 护甲+10 "></div>
+                    <!--<div class="dupe">&nbsp;</div>-->
+                </td>
+                <td class="tier4">
+                    <div class="bg-60px_Mystic_Staff_icon" title="神秘法杖 目标的魔法抗性-40，受到攻击时获得的魔法+100%"></div>
+                    <!--<div class="dupe">&nbsp;</div>-->
+                </td>
+                <td></td>
+                <td class="desc">
+                    护甲 +20<br>
+                    魔法恢复 +5<br>
+                    目标受到攻击时降低 50 攻击速度
+                </td>
+            </tr>
+            <tr>
+                <td class="item">
+                    <div class="bg-60px_Daedalus_icon" title="代达罗斯之殇"></div>
+                    <div class="num">6</div>
+                </td>
+                <td class="item">
+                    <div class="bg-60px_Crystalys_icon" title="水晶剑"></div>
+                </td>
+                <td class="tier3">
+                    <div class="bg-60px_Demon_Edge_icon" title="恶魔刀锋 攻击力+30"></div>
+                    <!--<div class="dupe">&nbsp;</div>-->
+                </td>
+                <td></td>
+                <td class="desc">
+                    攻击力 +40<br>
+                    10%几率造成 4x 伤害
+                </td>
+            </tr>
+            <tr>
+                <td class="item">
+                    <div class="bg-60px_Heart_of_Tarrasque_icon" title="恐鳌之心"></div>
+                    <div class="num">7</div>
+                </td>
+                <td class="tier1">
+                    <div class="bg-60px_Ring_of_Health_icon" title="治疗指环 生命恢复+10"></div>
+                    <!--<div class="dupe">&nbsp;</div>-->
+                </td>
+                <td class="tier2">
+                    <div class="bg-60px_Vitality_Booster_icon" title="活力之球 最大生命值+250"></div>
+                    <!--<div class="dupe">&nbsp;</div>-->
+                </td>
+                <td class="tier4">
+                    <div class="bg-60px_Reaver_icon" title="掠夺者之斧 最大生命值+500，生命恢复+10"></div>
+                </td>
+                <td class="desc">
+                    最大HP +1000<br>
+                    每1s恢复1% HP
+                </td>
+            </tr>
+            <tr>
+                <td class="item">
+                    <div class="bg-60px_Divine_Rapier_icon" title="圣剑"></div>
+                    <div class="num">7</div>
+                </td>
+                <td class="tier3">
+                    <div class="bg-60px_Demon_Edge_icon" title="恶魔刀锋 攻击力+30"></div>
+                    <!--<div class="dupe">&nbsp;</div>-->
+                </td>
+                <td class="tier4">
+                    <div class="bg-60px_Sacred_Relic_icon" title="圣者遗物 攻击+50"></div>
+                </td>
+                <td></td>
+                <td class="desc">
+                    攻击力 +150
+                </td>
+            </tr>
+            <tr>
+                <td class="item">
+                    <div class="bg-60px_Mjollnir_icon" title="雷神之锤"></div>
+                    <div class="num">7</div>
+                </td>
+                <td class="item">
+                    <div class="bg-60px_Maelstrom_icon" title="漩涡"></div>
+                </td>
+                <td class="tier3">
+                    <div class="bg-60px_Hyperstone_icon" title="振奋宝石 攻击速度+30"></div>
+                    <!--<div class="dupe">&nbsp;</div>-->
+                </td>
+                <td></td>
+                <td class="desc">
+                    攻击力 +50, 攻击速度 +30<br>
+                    攻击时有 25% 几率释放闪电箭对最多5个敌人分别造成200伤害
+                </td>
+            </tr>
+            <tr>
+                <td class="item">
+                    <div class="bg-60px_Scythe_of_Vyse_icon" title="邪恶镰刀"></div>
+                    <div class="num">8</div>
+                </td>
+                <td class="tier1">
+                    <div class="bg-60px_Void_Stone_icon" title="虚无宝石 攻击时+100% 魔法获取"></div>
+                    <!--<div class="dupe">&nbsp;</div>-->
+                </td>
+                <td class="tier3">
+                    <div class="bg-60px_Ultimate_Orb_icon" title="极限法球 最大HP +250, 受到伤害式魔法获取+25% "></div>
+                </td>
+                <td class="tier4">
+                    <div class="bg-60px_Mystic_Staff_icon" title="神秘法杖 目标的魔法抗性-40，受到攻击时获得的魔法+100%"></div>
+                    <!--<div class="dupe">&nbsp;</div>-->
+                </td>
+                <td class="desc">
+                    目标魔法抗性 -20 <br>
+                    攻击或受到伤害时 +50% 魔法恢复, 最大HP +250<br>
+                    自动施法: 将敌方变羊，持续8
+                </td>
+            </tr>
+            <tr>
+                <td class="item">
+                    <div class="bg-60px_Battle_Fury_icon" title="狂战斧"></div>
+                    <div class="num">8</div>
+                </td>
+                <td class="tier3">
+                    <div class="bg-60px_Demon_Edge_icon" title="恶魔刀锋 攻击力+30"></div>
+                    <!--<div class="dupe">&nbsp;</div>-->
+                </td>
+                <td class="item">
+                    <div class="bg-60px_Perseverance_icon" title="坚韧球"></div>
+                </td>
+                <!--<div class="dupe">&nbsp;</div>-->
+                <td>
+                </td>
+                <td class="desc">
+                    +30攻击力，10点生命恢复 <br>
+                    攻击时获得额外100%魔法(不与坚韧球叠加)<br>
+                    装备棋子获得300范围的，30%攻击力的纯粹溅射伤害
+                </td>
+            </tr>
+        </tbody></table>
+    </section>
+</div>
+
+<footer class="section section--black footer">
+    <div class="content content--wide">
+        <div align="center">
+            <!-- dota2chess -->
+            <ins class="adsbygoogle google_ads" style="display:block" data-ad-client="ca-pub-9584632072299729" data-ad-slot="2146053866" data-ad-format="auto" data-full-width-responsive="true"></ins>
+            <script>
+                (adsbygoogle = window.adsbygoogle || []).push({});
+            </script>
+        </div>
+        <ul class="footer-menu">
+            <li>
+                <div class="font-16 mt-12">
+                    <div class="busuanzi">
+                        访问量:
+                        <strong id="busuanzi_value_site_pv">
+                            <i class="fa fa-spinner fa-spin"></i>
+                        </strong>
+                          |  
+                        访客数:
+                        <strong id="busuanzi_value_site_uv">
+                            <i class="fa fa-spinner fa-spin"></i>
+                        </strong>
+                    </div>
+                    刀塔自走棋查询工具 (更新移动适配)<br>
+                    物品合成公式查询<br>
+                </div>
+                <div class="font-16 mt-12">
+                    翻译制作 by Ackurdeeve.com © Copyright 2019<br>
+                </div>
+            </li>
+        </ul>
+    </div>
+</footer>
+<div class="show-alert"><i class=""></i><span class="show-alert-message"></span></div>
+
+<!-- scripts -->
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/init.js"></script>
+<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+<script type="text/javascript" src="js/dota2items.js"></script>
+
+
+
+</body></html>

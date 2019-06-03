@@ -1,0 +1,498 @@
+<!DOCTYPE html><html lang="zh-CN"><head>
+    <!--Setting-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+    <meta http-equiv="Cache-Control" content="no-siteapp">
+    <meta http-equiv="Cache-Control" content="no-transform">
+    <meta name="renderer" content="webkit|ie-comp|ie-stand">
+    <meta name="apple-mobile-web-app-capable" content="畅游星海">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no,email=no,adress=no">
+    <meta name="browsermode" content="application">
+    <meta name="screen-orientation" content="portrait">
+    <link rel="dns-prefetch" href="https://www.ackurdeeve.com">
+    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <script>
+        (adsbygoogle = window.adsbygoogle || []).push({
+            google_ad_client: "ca-pub-9584632072299729",
+            enable_page_level_ads: true
+        });
+    </script>
+
+<!--SEO-->
+
+    <meta name="keywords" content="EVEOnline,Games,VPN,VPS">
+
+    <meta name="description" content="This guide is to show you that how to set up a VPN running by yourself step by step for steady on...">
+
+    <meta name="robots" content="all">
+    <meta name="google" content="all">
+    <meta name="googlebot" content="all">
+    <meta name="verify" content="all">
+</head><body>
+    <title>A Steady Self-Only-Owned VPN for Game online | 畅游星海</title>
+
+    <link rel="alternate" href="https://feed43.com/ackurdeeve.xml" title="畅游星海" type="application/atom+xml">
+
+    <link rel="stylesheet" href="/css/bootstrap.min.css?rev=3.3.7">
+<link rel="stylesheet" href="/css/font-awesome.min.css?rev=4.5.0">
+<link rel="stylesheet" href="/css/style.css?rev=@@hash">
+
+
+
+
+    <meta name="generator" content="Hexo 3.8.0"><div class="hide">
+		<script type="text/javascript">
+			var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");document.write(unescape("%3Cspan class='cnzz_stat_icon_1276110270 hide' %3E%3Cscript%20src%3D%22https%3A%2F%2Fs95.cnzz.com%2Fz_stat.php%3Fweb_id%3D1272564536%22%3E%3C%2Fscript%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s19.cnzz.com/z_stat.php%3Fid%3D1276110270%26show%3Dpic1' type='text/javascript'%3E%3C/script%3E"));
+		</script>
+	</div>
+
+
+
+<meta name="generator" content="Hexo 3.8.0"><script>
+        var _hmt = _hmt || [];
+        (function() {
+            var hm = document.createElement("script");
+            hm.src = "https://hm.baidu.com/hm.js?1752145131f269b0b11c73e84c4cb221";
+            var s = document.getElementsByTagName("script")[0];
+            s.parentNode.insertBefore(hm, s);
+        })();
+    </script>
+
+<meta name="generator" content="Hexo 3.8.0"><script>
+		(function(i, s, o, g, r, a, m) {
+		    i['GoogleAnalyticsObject'] = r;
+		    i[r] = i[r] || function() {
+		        (i[r].q = i[r].q || []).push(arguments)
+		    }, i[r].l = 1 * new Date();
+		    a = s.createElement(o),
+		    m = s.getElementsByTagName(o)[0];
+		    a.async = 1;
+		    a.src = g;
+		    m.parentNode.insertBefore(a, m)
+		})(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+		ga('create', 'UA-134098439-1', 'auto');
+		ga('send', 'pageview');
+	</script>
+
+<meta name="generator" content="Hexo 3.8.0">
+    <meta name="baidu-site-verification" content="qKmZhGOWgO">
+
+
+    <script>
+        (function(){
+            var bp = document.createElement('script');
+            var curProtocol = window.location.protocol.split(':')[0];
+            if (curProtocol === 'https') {
+                bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+            }
+            else {
+                bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+            }
+            var s = document.getElementsByTagName("script")[0];
+            s.parentNode.insertBefore(bp, s);
+        })();
+    </script>
+
+
+    <script language="Javascript">
+        //document.oncontextmenu = new Function("event.returnValue=false");
+        document.onselectstart = new Function("event.returnValue=false");
+        document.keydown = function (e) {
+            if (e.ctrlKey && (e.keyCode == 65 || e.keyCode == 67)) {
+                return false;
+            }
+        };       
+    </script>
+
+    <style type="text/css">
+        html {
+            -ms-user-select: none;
+            -moz-user-select: none;
+            -webkit-user-select: none;
+        }
+    </style>
+
+
+
+    <header class="main-header" style="background-image:url(/img/ship1.jpg)">
+    <div class="main-header-box">
+        <a class="header-avatar" href="/" title="Ackurdeeve">
+            <img src="/img/avatar.png" alt="logo头像" class="img-responsive center-block">
+        </a>
+        <div class="branding">
+        	<!--<h2 class="text-hide">Snippet主题,从未如此简单有趣</h2>-->
+            
+                <h2> 畅游星海 </h2>
+            
+    	</div>
+    </div>
+</header>
+    <nav class="main-navigation">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="navbar-header"><span class="nav-toggle-button collapsed pull-right" data-toggle="collapse" data-target="#main-menu" id="mnav">
+                    <span class="sr-only"></span>
+                        <i class="fa fa-bars"></i>
+                    </span>
+                    <a class="navbar-brand" href="https://www.ackurdeeve.com">畅游星海</a>
+                </div>
+                <div class="collapse navbar-collapse" id="main-menu">
+                    <ul class="menu">
+                        
+                            <li role="presentation" class="text-center">
+                                <a href="/"><i class="fa "></i>首页</a>
+                            </li>
+                        
+                            <li role="presentation" class="text-center">
+                                <a href="/categories/Missions/"><i class="fa "></i>任务指南</a>
+                            </li>
+                        
+                            <li role="presentation" class="text-center">
+                                <a href="/categories/Tools/"><i class="fa "></i>实用工具</a>
+                            </li>
+                        
+                            <li role="presentation" class="text-center">
+                                <a href="/categories/Dota2/"><i class="fa "></i>自走棋专区</a>
+                            </li>
+                        
+                            <li role="presentation" class="text-center">
+                                <a href="/categories/Games/"><i class="fa "></i>游戏新闻</a>
+                            </li>
+                        
+                            <li role="presentation" class="text-center">
+                                <a href="/archives/"><i class="fa "></i>存档</a>
+                            </li>
+                        
+                            <li role="presentation" class="text-center">
+                                <a href="/dota2chessbuilds.html"><i class="fa "></i>自走棋模拟器</a>
+                            </li>
+                        
+                            <li role="presentation" class="text-center">
+                                <a href="https://mirror.ackurdeeve.com/" rel="external nofollow noopener noreferrer" target="_blank"><i class="fa /img/omega.png"></i>镜像网站</a>
+                            </li>
+                        
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</nav>
+    <section class="content-wrap">
+        <div class="container">
+            <div class="row">
+                <main class="col-md-8 main-content m-post">
+                    <p id="process"></p>
+<article class="post">
+    <div class="post-head">
+        <h1 id="A Steady Self-Only-Owned VPN for Game online">
+            
+	            A Steady Self-Only-Owned VPN for Game online
+            
+        </h1>
+        <div class="post-meta">
+    
+    <span class="categories-meta fa-wrap">
+        <i class="fa fa-folder-open-o"></i>
+        <a class="category-link" href="/categories/Tools/">Tools</a>
+    </span>
+    
+
+    
+    <span class="fa-wrap">
+        <i class="fa fa-tags"></i>
+        <span class="tags-meta">
+            
+            <a class="tag-link" href="/tags/EVEOnline/">EVEOnline</a> <a class="tag-link" href="/tags/Games/">Games</a> <a class="tag-link" href="/tags/VPN/">VPN</a> <a class="tag-link" href="/tags/VPS/">VPS</a>
+            
+        </span>
+    </span>
+    
+    
+    
+    <span class="fa-wrap">
+        <i class="fa fa-clock-o"></i>
+        <span class="date-meta">2019/02/14</span>
+    </span>
+    
+    <span class="fa-wrap">
+        <i class="fa fa-eye"></i>
+        <span id="busuanzi_value_page_pv"></span>
+    </span>
+    
+    
+</div>
+            
+            
+    </div>
+    
+    <div class="post-body post-content">
+        <p>This guide is to show you that how to set up a VPN running by yourself step by step for steady online gaming. Not an ad for buying a VPN service. The self managed VPN can help you with many online game network issues.</p>
+<h2 id="1-Why-do-I-need-a-Private-VPN-for-playing-online-game-myself"><a href="#1-Why-do-I-need-a-Private-VPN-for-playing-online-game-myself" class="headerlink" title="1. Why do I need a Private VPN for playing online game myself?"></a>1. Why do I need a <strong><em>Private VPN</em></strong> for playing online game myself?</h2><p>Many players frequently asked that:</p>
+<ul>
+<li>Do I need a VPN or not for playing online game or not?</li>
+<li>which VPN is the best for playing game online.</li>
+</ul>
+<p>There is one rule: </p>
+<blockquote>
+<p>If you’re facing connnection difficulty or latency issues, <strong>DONT</strong> hesitate to try a VPN for better game play experience.</p>
+</blockquote>
+<p>The VPN can also help you: </p>
+<ul>
+<li>Download DLC content, and access Xbox Live and PSN exclusives from every country.</li>
+<li>Shorter connection routes between you and gaming servers.</li>
+<li>Play multiplayer games around the world with your friends even if a title requires an IP address from a specific country to play.</li>
+</ul>
+<p>However, most of the players who have the aforementioned problems try to find a Pulbic VPN provider. Because data is not really safe depends on your VPN provider, your password or private files may leak to the pulic internet. Worst case, if the IPs provided have a bad record, the online game service will very likely ban you,<a href="https://www.reddit.com/r/Eve/comments/ac3x92/got_banne/" rel="external nofollow noopener noreferrer" target="_blank">An example happened recently</a>.</p>
+<p>Many players frequently asked that which VPN is the best for playing game online? My answer is :</p>
+<blockquote>
+<p>There is no best VPN, but the most suitable VPN for you.</p>
+</blockquote>
+<h2 id="2-Virtual-Private-Server-VPS-Selection-for-Online-Game"><a href="#2-Virtual-Private-Server-VPS-Selection-for-Online-Game" class="headerlink" title="2. Virtual Private Server(VPS) Selection for Online Game"></a>2. Virtual Private Server(VPS) Selection for Online Game</h2><p>To find a good VPN provider is not easy, some players wasted lots of money on that. In this blog, I will give a tutorial on <strong><em>how to set up a online game VPN by yourself</em></strong>. The service provider (VPS) can be either <a href="https://bwh8.net/aff.php?aff=5462" rel="external nofollow noopener noreferrer" target="_blank">Bandwagon</a>, <a href="https://aws.amazon.com/ec2" rel="external nofollow noopener noreferrer" target="_blank">Amazon EC2</a> or <a href="https://cloud.google.com/" rel="external nofollow noopener noreferrer" target="_blank">Google Cloud Platform</a>. These providers have good IP records, one of them is even one of the provider for EveOnline itself.</p>
+<p>Among them, the <a href="https://bwh8.net/aff.php?aff=5462" rel="external nofollow noopener noreferrer" target="_blank">Bandwagon</a> is the cheapest, and GCP is the most expensive. So in this tutorial take <a href="https://bwh8.net/aff.php?aff=5462" rel="external nofollow noopener noreferrer" target="_blank">Bandwagon</a> as an example.</p>
+<p><img src="/img/tools/20190214_图1.png" alt="图1"></p>
+<p>Chose the cheapest VPS in the list, it is enough for most of the online games. My VPN has 512MB RAM, 20GB SSD and 1TB Bandwidth. I rarely confront network problems using this setup and also host a webserver on it.</p>
+<p>I am a player from China where has the most strict internet censor system know as <a href="http://campus.murraystate.edu/academic/faculty/wlyle/540/2013/Bu.pdf" rel="external nofollow noopener noreferrer" target="_blank">GFW</a>. Even VPS Bandwagon itself was banned from browsing. That is why I wrote this blog in English. Because <a href="https://www.quora.com/Is-using-VPN-illegal-in-China-in-2018" rel="external nofollow noopener noreferrer" target="_blank">individual VPN provider in China is illegal</a>, do not want my webserver be blocked because of this blog.</p>
+<p>I am using a 200m bandwidth service from China Telecom. This is my recent ping from mid-China to EVEonline server using launcher network diagnostics tool on work days. The internet is crowd at daytime, so the ping is not as good as in the evening.</p>
+<figure class="highlight plain"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">正在 Ping dm794883twbxj.cloudfront.net [52.85.157.231] 具有 32 字节的数据:</span><br><span class="line">来自 52.85.157.231 的回复: 字节=32 时间=183ms TTL=242</span><br><span class="line">来自 52.85.157.231 的回复: 字节=32 时间=188ms TTL=242</span><br><span class="line">来自 52.85.157.231 的回复: 字节=32 时间=183ms TTL=242</span><br><span class="line">来自 52.85.157.231 的回复: 字节=32 时间=188ms TTL=242</span><br></pre></td></tr></tbody></table></figure>
+<p>And after local time 18:00, the ping can be down to 60ms:</p>
+<p><img src="/img/tools/20190214_图2.png" alt="图2"></p>
+<p>I also use this VPS for my 6 years old child playing Roblox which is a fantastic game platform for children. Before using the VPS, I can not play this hottest game in China due to connection issues or DNS pollution. And now, my child can enjoy this game without difficulty.</p>
+<h2 id="3-Step-by-Step-to-set-up-a-VPN"><a href="#3-Step-by-Step-to-set-up-a-VPN" class="headerlink" title="3. Step by Step to set up a VPN"></a>3. Step by Step to set up a VPN</h2><h3 id="3-1-Get-an-new-OS-on-VPS"><a href="#3-1-Get-an-new-OS-on-VPS" class="headerlink" title="3.1 Get an new OS on VPS"></a>3.1 Get an new OS on VPS</h3><p>Almost every VPS has its own panel, but the Operation Systom (OS) is nearly the same which is centos, debian or ubuntu. <a href="https://bwh8.net/aff.php?aff=5462" rel="external nofollow noopener noreferrer" target="_blank">Bandwagon</a> client aren is like this:</p>
+<p><img src="/img/tools/20190214_图3.png" alt="图3"></p>
+<p>Click the KiwiVM Control Panel. Install new OS->chose debiao-9-86_64.</p>
+<p><img src="/img/tools/20190214_图4.png" alt="图4"></p>
+<p>After the OS install completes, record the SSH password,port and also VPS IP address（in the main control panels）. It will be used later.</p>
+<figure class="highlight plain"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">Install new OS</span><br><span class="line">Operating system is currently being reinstalled, and it can take up to 15 minutes to complete.</span><br><span class="line">Once finished, you will receive an e-mail notification at "YOUREMAIL".</span><br><span class="line"></span><br><span class="line">You will need a new root password to access your VPS: </span><br><span class="line">8u5bCNntoqmt</span><br><span class="line"></span><br><span class="line">New SSH Port: </span><br><span class="line">29076</span><br></pre></td></tr></tbody></table></figure>
+<p>If you forget the SSH password,you can simply click Root password modification-> generate and set new root password.It will show as</p>
+<blockquote>
+<p>Root password modification<br>Root Password has been successfully set to:rEzrHd2Nf5b2</p>
+</blockquote>
+<p>It is done with the VPS OS configuration.</p>
+<h3 id="3-2-VPS-Configuration-using-Putty"><a href="#3-2-VPS-Configuration-using-Putty" class="headerlink" title="3.2 VPS Configuration using Putty"></a>3.2 VPS Configuration using Putty</h3><p>Use the Root shell Commad sometimes has limitation, it is recommand that using a  SSH and telnet client such as PuTTY, Xshell. In this tutorial Putty is used.</p>
+<p>Putty is an SSH and telnet client, developed originally by Simon Tatham for the Windows platform. Get the <a href="https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html" rel="external nofollow noopener noreferrer" target="_blank">latest version here</a>.</p>
+<p>Open Putty client, fill in the Hostname and port of your VPS record in the 3.1 step.<br><img src="/img/tools/20190214_图5.png" alt="图5"><br><strong><em>Do not forget to chose the right connection type as “SSH” </em></strong></p>
+<p>Click open and you will get a warning press “Y” and continue.</p>
+<figure class="highlight plain"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">login as: root</span><br><span class="line">root@YourIP's password:  you can copy and right click to paste it, then hit enter.</span><br><span class="line">Linux debian 4.9.0-3-amd64 #1 SMP Debian 4.9.30-2+deb9u2 (2017-06-26) x86_64</span><br><span class="line"></span><br><span class="line">The programs included with the Debian GNU/Linux system are free software;</span><br><span class="line">the exact distribution terms for each program are described in the</span><br><span class="line">individual files in /usr/share/doc/*/copyright.</span><br><span class="line"></span><br><span class="line">Debian GNU/Linux comes with ABSOLUTELY NO WARRANTY, to the extent</span><br><span class="line">root@debian:~#</span><br></pre></td></tr></tbody></table></figure>
+<p>The copy the command one by one and also paste to the putty client. </p>
+<ul>
+<li>wget –no-check-certificate -O ./kcptun_for_ss_ssr-install.sh <a href="https://raw.githubusercontent.com/ackurdeeve/kcptun_for_ss_ssr/master/kcptun_for_ss_ssr-install.sh" rel="external nofollow noopener noreferrer" target="_blank">https://raw.githubusercontent.com/ackurdeeve/kcptun_for_ss_ssr/master/kcptun_for_ss_ssr-install.sh</a></li>
+<li>chmod 700 ./kcptun_for_ss_ssr-install.sh</li>
+<li>./kcptun_for_ss_ssr-install.sh install</li>
+</ul>
+<ol>
+<li>wget is a download file command for linux. The first line is to get a script called kcptun_for_ss_ssr-install.sh.</li>
+<li>chmod 700 means the downloaded files must have a root executive permission. This command will return nothing, In linux if you excute a command and get nothing it means good.</li>
+<li>Install using the script.</li>
+</ol>
+<p>After this, the Putty will show automated process, and finally get here. Choose 7 and hit Enter, press any key to install.<br></p><figure class="highlight plain"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">+----------------------------------------------------------------+</span><br><span class="line">|                KCPTUN for SS/SSR on Linux Server               |</span><br><span class="line">+----------------------------------------------------------------+</span><br><span class="line">|  A tool to auto-compile & install KCPTUN for SS/SSR on Linux   |</span><br><span class="line">+----------------------------------------------------------------+</span><br><span class="line">| Intro: https://github.com/onekeyshell/kcptun_for_ss_ssr/issues |</span><br><span class="line">+----------------------------------------------------------------+</span><br><span class="line"></span><br><span class="line">You have 7 options for your kcptun/ss/ssr install.</span><br><span class="line">1: Install Shadowsocks-libev</span><br><span class="line">2: Install ShadowsocksR(python)</span><br><span class="line">3: Install KCPTUN</span><br><span class="line">4: Install Shadowsocks-libev + KCPTUN</span><br><span class="line">5: Install ShadowsocksR(python) + KCPTUN</span><br><span class="line">6: Install Shadowsocksrr(python)</span><br><span class="line">7: Install Shadowsocksrr(python) + KCPTUN [default]</span><br><span class="line">Enter your choice (1, 2, 3, 4, 5, 6, 7 or exit. default [7]): 7</span><br></pre></td></tr></tbody></table></figure><p></p>
+<p>Follow the install instructions. You will set</p>
+<ul>
+<li>input password for shadowsocksrr : 1234</li>
+<li>input port for shadowsocksrr : 1443</li>
+<li>select encryption : 6  <pre><code>chacha20 is good for mobile.
+</code></pre></li>
+<li>Protocol plugin : 1<pre><code>use original is good for games latency performance
+</code></pre></li>
+<li>Obfs plugin : 1<pre><code>use plain is good for games latency performance
+</code></pre></li>
+<li>input password for kcptun : 1234<pre><code>can be same with the shadowsocksrr
+</code></pre></li>
+<li>input port for kcptun : 38989</li>
+<li>select method for kcptun : 2<pre><code>aes-128 is good enough
+</code></pre></li>
+<li>fast mode : fast3<pre><code>fast3 is for realtime online games, and will consume up to twice of normal tcp bandwidth. 
+EVEOnline network is small, so can be neglect.
+</code></pre></li>
+<li>mtu : 1350</li>
+<li>select compression : 2</li>
+</ul>
+<p>and then hit anykey to continue. It will take a while from 2 to 5mins for the script to install and config. Finally we get there.</p>
+<figure class="highlight plain"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br></pre></td><td class="code"><pre><span class="line">IPv6 support</span><br><span class="line">Starting Shadowsocksrr success</span><br><span class="line">Shadowsocksrr start success!</span><br><span class="line">kcptun version 20190109</span><br><span class="line"></span><br><span class="line">Congratulations, install completed!</span><br><span class="line">========================= Your Server Setting =========================</span><br><span class="line">Your Server IP: 23.83.224.189</span><br><span class="line">-------------------- Shadowsocksrr Setting --------------------</span><br><span class="line">SSRR configure file         : /usr/local/shadowsocksrr/user-config.json</span><br><span class="line">SSRR Server Port            : 1443</span><br><span class="line">SSRR Password               : 1234</span><br><span class="line">SSRR Encryption Method      : chacha20</span><br><span class="line">SSRR protocol               : origin</span><br><span class="line">SSRR obfs                   : plain</span><br><span class="line">----------------------------------------------------------</span><br><span class="line">SSRR status manage: /etc/init.d/ssrr {start|stop|restart|status|config|version}</span><br><span class="line">==========================================================</span><br><span class="line">-------------------- KCPTUN Setting --------------------</span><br><span class="line">Kcptun configure file     : /usr/local/kcptun/config.json</span><br><span class="line">Kcptun Server Port        : 38989</span><br><span class="line">Kcptun Key                : 1234</span><br><span class="line">Kcptun Crypt mode         : aes-128</span><br><span class="line">Kcptun Fast mode          : fast3</span><br><span class="line">Kcptun MTU                : 1350</span><br><span class="line">Kcptun sndwnd             : 1024</span><br><span class="line">Kcptun rcvwnd             : 1024</span><br><span class="line">Kcptun compression        : disable</span><br><span class="line">----------------------------------------------------------</span><br><span class="line">Kcptun config for SS/SSR/Phone:</span><br><span class="line">KCP Port      : 38989</span><br><span class="line">KCP parameter : --crypt aes-128 --key 1234 --mtu 1350 --sndwnd 128 --rcvwnd 1024                                                --mode fast3 --nocomp</span><br><span class="line">----------------------------------------------------------</span><br><span class="line">Kcptun status manage: /etc/init.d/kcptun {start|stop|restart|status|config|versi                                               on}</span><br><span class="line">==========================================================</span><br></pre></td></tr></tbody></table></figure>
+<p>Copy this down to a txt file or wherever convenient .To optimaze the server you could run follows script, it enables <a href="https://cloud.google.com/blog/products/gcp/tcp-bbr-congestion-control-comes-to-gcp-your-internet-just-got-faster" rel="external nofollow noopener noreferrer" target="_blank">Google BBR</a> and is good for Network which has high package loss:</p>
+<figure class="highlight plain"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">wget --no-check-certificate https://github.com/teddysun/across/raw/master/bbr.sh && chmod +x bbr.sh && ./bbr.sh</span><br></pre></td></tr></tbody></table></figure>
+<h3 id="3-2-Software-to-get-VPN-server-functional"><a href="#3-2-Software-to-get-VPN-server-functional" class="headerlink" title="3.2 Software to get VPN server functional"></a>3.2 Software to get VPN server functional</h3><p>There are three softwares needed to use the information copied in the 3.2 step.</p>
+<ul>
+<li><a href="https://github.com/shadowsocks/shadowsocks-windows/releases" rel="external nofollow noopener noreferrer" target="_blank">Shadowsocks</a></li>
+<li><a href="https://github.com/xtaci/kcptun/releases" rel="external nofollow noopener noreferrer" target="_blank">kcptun</a><pre><code>You also need a [Gui for Kcptun](https://github.com/GangZhuo/kcptun-gui-windows/releases)
+to config the protocol.
+</code></pre></li>
+<li><a href="https://www.proxifier.com/" rel="external nofollow noopener noreferrer" target="_blank">Proxifer</a></li>
+</ul>
+<p>Download the latest version of them.</p>
+<h4 id="3-2-1-Shadowsocks"><a href="#3-2-1-Shadowsocks" class="headerlink" title="3.2.1 Shadowsocks"></a>3.2.1 Shadowsocks</h4><p>This part is easy. Config in the Shadowsocks like this:</p>
+<p><img src="/img/tools/20190214_图6.png" alt="图6"></p>
+<p>If you fill in the VPS server ip with 127.0.0.1, it will use Kcptun.</p>
+<h4 id="3-2-2-Kcptun"><a href="#3-2-2-Kcptun" class="headerlink" title="3.2.2 Kcptun"></a>3.2.2 Kcptun</h4><p> After you download the latest release of <a href="https://github.com/xtaci/kcptun/releases" rel="external nofollow noopener noreferrer" target="_blank">kcptun</a>, if you are using Win10 64 as me, please download “kcptun-windows-amd64-20190109.tar.gz”.</p>
+<p> Also get <a href="https://github.com/GangZhuo/kcptun-gui-windows/releases" rel="external nofollow noopener noreferrer" target="_blank">gui for Kcptun</a>, and place it in the same folder with “client_windows_amd64.exe”.</p>
+<p><img src="/img/tools/20190214_图7.png" alt="图7"></p>
+<p>Open kcptun-gui.exe, you can set it to English by right click the icon in the buttomright of the system. Do not forget to enable the gui, otherwise it appears gray.</p>
+<p><img src="/img/tools/20190214_图8.png" alt="图8"></p>
+<p>Config it like this. Remember to change your Shadowsocks server ip to 127.0.0.1，<br><img src="/img/tools/20190214_图9.png" alt="图9"></p>
+<p>Do not forget that right click the icon (then “more->custom kcptun”) to locate file “client_windows_amd64.exe”.</p>
+<h3 id="3-2-3-Proxifier"><a href="#3-2-3-Proxifier" class="headerlink" title="3.2.3 Proxifier"></a>3.2.3 Proxifier</h3><p>Get the <a href="https://www.proxifier.com/" rel="external nofollow noopener noreferrer" target="_blank">Proxifer</a>, and install it.</p>
+<blockquote>
+<p>Click profile->proxy servers, add address with “127.0.0.1” , port “1080” ,protocol “socket 5”. The port is the same as SS local port.</p>
+</blockquote>
+<p><img src="/img/tools/20190214_图10.png" alt="图10"></p>
+<p>Then press check to confirm that the server is correct set.</p>
+<p><img src="/img/tools/20190214_图11.png" alt="图11"></p>
+<p>If everything goes well, it appears.<br></p><figure class="highlight plain"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">[46:45] Starting: Test 1: Connection to the Proxy Server</span><br><span class="line">[46:45] IP Address: 127.0.0.1</span><br><span class="line">[46:45] Connection established</span><br><span class="line">[46:45] Test passed.</span><br><span class="line">[46:45] Starting: Test 2: Connection through the Proxy Server</span><br><span class="line">[46:45] Authentication was successful.</span><br><span class="line">[46:45] Connection to www.google.com:80 established through the proxy server.</span><br><span class="line">[46:46] A default web page was successfuly loaded.</span><br><span class="line">[46:46] Test passed.</span><br></pre></td></tr></tbody></table></figure><p></p>
+<p>click profile->proxification rules, press ok and it is all done.</p>
+<p><img src="/img/tools/20190214_图12.png" alt="图12"></p>
+<p>The setting is for EVEOnline. You can add other programs in the proxifier, and the program will go througn the proxy to internet.</p>
+<p><img src="/img/tools/kcptun.png" alt="kcptun"></p>
+<h2 id="Enjoy"><a href="#Enjoy" class="headerlink" title="Enjoy"></a>Enjoy</h2><p>This is the end of the tutorial. Nothing hard, everyone can easily setup a VPN for himself following this guide.</p>
+<p>Have a nice time and fly safe! Yours Ackurdeeve.</p>
+<h2 id="您可能感兴趣的内容："><a href="#您可能感兴趣的内容：" class="headerlink" title="您可能感兴趣的内容："></a>您可能感兴趣的内容：</h2><h3 id="1-5级任务指引"><a href="#1-5级任务指引" class="headerlink" title="1. 5级任务指引"></a>1. <a href="https://www.ackurdeeve.com/201902/glv5-index/">5级任务指引</a></h3><h3 id="2-自建Excel表格获取游戏数据指南"><a href="#2-自建Excel表格获取游戏数据指南" class="headerlink" title="2. 自建Excel表格获取游戏数据指南"></a>2. <a href="/201902/SSOAuthinExcel/">自建Excel表格获取游戏数据指南</a></h3><h2 id="返回主页"><a href="#返回主页" class="headerlink" title="返回主页"></a><a href="https://www.ackurdeeve.com">返回主页</a></h2>
+    </div>
+    
+    <div class="post-footer">
+        <div>
+            
+                转载声明：以上内容均为作者原创，商业转载请联系作者获得授权,非商业转载请注明出处 © <a href="" target="_blank">Ackurdeeve.com</a>
+<br>
+<div>
+    <!-- notific -->
+      <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-9584632072299729" data-ad-slot="2430961061" data-ad-format="auto" data-full-width-responsive="true"></ins>
+      <script>
+          (adsbygoogle = window.adsbygoogle || []).push({});
+      </script>
+</div>
+            
+        </div>
+        <div>
+            
+        </div>
+    </div>
+</article>
+
+<div class="article-nav prev-next-wrap clearfix">
+    
+        <a href="/201902/Cleansingfire/" class="pre-post btn btn-default" title="盖伦特5级任务 净化的火焰 Cleasing Fire">
+            <i class="fa fa-angle-left fa-fw"></i><span class="hidden-lg">上一篇</span>
+            <span class="hidden-xs">盖伦特5级任务 净化的火焰 Cleasing Fire</span>
+        </a>
+    
+    
+        <a href="/201902/breeding-facility/" class="next-post btn btn-default" title="盖伦特5级任务 繁殖设施 Breeding Facility">
+            <span class="hidden-lg">下一篇</span>
+            <span class="hidden-xs">盖伦特5级任务 繁殖设施 Breeding Facility</span><i class="fa fa-angle-right fa-fw"></i>
+        </a>
+    
+</div>
+
+
+    <div id="comments">
+        <meta name="generator" content="Hexo 3.8.0"><div id="lv-container" data-id="city" data-uid="MTAyMC80MjYyMS8xOTE2OA==">
+  <script type="text/javascript">
+     (function(d, s) {
+         var j, e = d.getElementsByTagName(s)[0];
+         if (typeof LivereTower === 'function') { return; }
+         j = d.createElement(s);
+         j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
+         j.async = true;
+         e.parentNode.insertBefore(j, e);
+     })(document, 'script');
+  </script>
+</div>
+
+
+    </div>
+
+
+
+
+
+                </main>
+                
+                    <aside id="article-toc" role="navigation" class="col-md-4">
+    <div class="widget">
+        <h3 class="title">文章目录</h3>
+        
+        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#1-Why-do-I-need-a-Private-VPN-for-playing-online-game-myself"><span class="toc-text">1. Why do I need a Private VPN for playing online game myself?</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2-Virtual-Private-Server-VPS-Selection-for-Online-Game"><span class="toc-text">2. Virtual Private Server(VPS) Selection for Online Game</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#3-Step-by-Step-to-set-up-a-VPN"><span class="toc-text">3. Step by Step to set up a VPN</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#3-1-Get-an-new-OS-on-VPS"><span class="toc-text">3.1 Get an new OS on VPS</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-2-VPS-Configuration-using-Putty"><span class="toc-text">3.2 VPS Configuration using Putty</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-2-Software-to-get-VPN-server-functional"><span class="toc-text">3.2 Software to get VPN server functional</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#3-2-1-Shadowsocks"><span class="toc-text">3.2.1 Shadowsocks</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#3-2-2-Kcptun"><span class="toc-text">3.2.2 Kcptun</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-2-3-Proxifier"><span class="toc-text">3.2.3 Proxifier</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Enjoy"><span class="toc-text">Enjoy</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#您可能感兴趣的内容："><span class="toc-text">您可能感兴趣的内容：</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-5级任务指引"><span class="toc-text">1. 5级任务指引</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-自建Excel表格获取游戏数据指南"><span class="toc-text">2. 自建Excel表格获取游戏数据指南</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#返回主页"><span class="toc-text">返回主页</span></a></li></ol>
+        <hr>
+        <div>
+            <!-- notific -->
+            <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-9584632072299729" data-ad-slot="2430961061" data-ad-format="auto" data-full-width-responsive="true"></ins>
+            <script>
+                (adsbygoogle = window.adsbygoogle || []).push({});
+            </script>
+        </div>
+        
+    </div>
+</aside>
+                
+            </div>
+        </div>
+    </section>
+    <footer class="main-footer">
+    <div class="container">
+        <div class="row">
+            <div>
+                <!-- notific -->
+                <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-9584632072299729" data-ad-slot="2430961061" data-ad-format="auto" data-full-width-responsive="true"></ins>
+                <script>
+                    (adsbygoogle = window.adsbygoogle || []).push({});
+                </script>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<a id="back-to-top" class="icon-btn hide">
+    <i class="fa fa-chevron-up"></i>
+</a>
+    <div class="copyright">
+    <div class="container">
+        <div class="row">      
+            <div class="col-sm-12">
+                <meta name="generator" content="Hexo 3.8.0"><div class="busuanzi">
+    
+        访问量:
+        <strong id="busuanzi_value_site_pv">
+            <i class="fa fa-spinner fa-spin"></i>
+        </strong>
+          |  
+        访客数:
+        <strong id="busuanzi_value_site_uv">
+            <i class="fa fa-spinner fa-spin"></i>
+        </strong>
+    
+</div>
+
+            </div>
+            <div class="col-sm-12">
+                <span>Copyright © 2019
+                </span> |
+                <span>
+                    畅游星海 <a href="//Ackurdeeve.com" class="copyright-links" target="_blank" rel="nofollow">Ackurdeeve.com</a>
+                </span> |
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<meta name="generator" content="Hexo 3.8.0"><script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+
+<script src="/js/app.js?rev=@@hash"></script>
+
+<style type="text/css">
+    html {
+        -ms-user-select: none;
+        -moz-user-select: none;
+        -webkit-user-select: none;
+    }
+</style>
+
+</body></html><!--Title--><!--[if lte IE 8]>
+<style>
+    html{ font-size: 1em }
+</style>
+<![endif]--><!--[if lte IE 9]>
+<div style="ie">你使用的浏览器版本过低，为了你更好的阅读体验，请更新浏览器的版本或者使用其他现代浏览器，比如Chrome、Firefox、Safari等。</div>
+<![endif]-->

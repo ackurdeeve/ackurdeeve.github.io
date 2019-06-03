@@ -1,0 +1,491 @@
+<!DOCTYPE html><html lang="zh-CN"><head>
+    <!--Setting-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+    <meta http-equiv="Cache-Control" content="no-siteapp">
+    <meta http-equiv="Cache-Control" content="no-transform">
+    <meta name="renderer" content="webkit|ie-comp|ie-stand">
+    <meta name="apple-mobile-web-app-capable" content="畅游星海">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no,email=no,adress=no">
+    <meta name="browsermode" content="application">
+    <meta name="screen-orientation" content="portrait">
+    <link rel="dns-prefetch" href="https://www.ackurdeeve.com">
+    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <script>
+        (adsbygoogle = window.adsbygoogle || []).push({
+            google_ad_client: "ca-pub-9584632072299729",
+            enable_page_level_ads: true
+        });
+    </script>
+
+<!--SEO-->
+
+    <meta name="keywords" content="EVEOnline,ESI,Excel,Postman">
+
+    <meta name="description" content="EVEOnline ESI Excel教程A Chinese Guide on ESI request using Excel
+1. 简介(博主的第一个MD文档，排版请见谅)
+
+ESI是EVE ...">
+
+    <meta name="robots" content="all">
+    <meta name="google" content="all">
+    <meta name="googlebot" content="all">
+    <meta name="verify" content="all">
+</head><body>
+    <title>EVEOnline ESI Excel教程 | 畅游星海</title>
+
+    <link rel="alternate" href="https://feed43.com/ackurdeeve.xml" title="畅游星海" type="application/atom+xml">
+
+    <link rel="stylesheet" href="/css/bootstrap.min.css?rev=3.3.7">
+<link rel="stylesheet" href="/css/font-awesome.min.css?rev=4.5.0">
+<link rel="stylesheet" href="/css/style.css?rev=@@hash">
+
+
+
+
+    <meta name="generator" content="Hexo 3.8.0"><div class="hide">
+		<script type="text/javascript">
+			var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");document.write(unescape("%3Cspan class='cnzz_stat_icon_1276110270 hide' %3E%3Cscript%20src%3D%22https%3A%2F%2Fs95.cnzz.com%2Fz_stat.php%3Fweb_id%3D1272564536%22%3E%3C%2Fscript%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s19.cnzz.com/z_stat.php%3Fid%3D1276110270%26show%3Dpic1' type='text/javascript'%3E%3C/script%3E"));
+		</script>
+	</div>
+
+
+
+<meta name="generator" content="Hexo 3.8.0"><script>
+        var _hmt = _hmt || [];
+        (function() {
+            var hm = document.createElement("script");
+            hm.src = "https://hm.baidu.com/hm.js?1752145131f269b0b11c73e84c4cb221";
+            var s = document.getElementsByTagName("script")[0];
+            s.parentNode.insertBefore(hm, s);
+        })();
+    </script>
+
+<meta name="generator" content="Hexo 3.8.0"><script>
+		(function(i, s, o, g, r, a, m) {
+		    i['GoogleAnalyticsObject'] = r;
+		    i[r] = i[r] || function() {
+		        (i[r].q = i[r].q || []).push(arguments)
+		    }, i[r].l = 1 * new Date();
+		    a = s.createElement(o),
+		    m = s.getElementsByTagName(o)[0];
+		    a.async = 1;
+		    a.src = g;
+		    m.parentNode.insertBefore(a, m)
+		})(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+		ga('create', 'UA-134098439-1', 'auto');
+		ga('send', 'pageview');
+	</script>
+
+<meta name="generator" content="Hexo 3.8.0">
+    <meta name="baidu-site-verification" content="qKmZhGOWgO">
+
+
+    <script>
+        (function(){
+            var bp = document.createElement('script');
+            var curProtocol = window.location.protocol.split(':')[0];
+            if (curProtocol === 'https') {
+                bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+            }
+            else {
+                bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+            }
+            var s = document.getElementsByTagName("script")[0];
+            s.parentNode.insertBefore(bp, s);
+        })();
+    </script>
+
+
+    <script language="Javascript">
+        //document.oncontextmenu = new Function("event.returnValue=false");
+        document.onselectstart = new Function("event.returnValue=false");
+        document.keydown = function (e) {
+            if (e.ctrlKey && (e.keyCode == 65 || e.keyCode == 67)) {
+                return false;
+            }
+        };       
+    </script>
+
+    <style type="text/css">
+        html {
+            -ms-user-select: none;
+            -moz-user-select: none;
+            -webkit-user-select: none;
+        }
+    </style>
+
+
+
+    <header class="main-header" style="background-image:url(/img/ship1.jpg)">
+    <div class="main-header-box">
+        <a class="header-avatar" href="/" title="Ackurdeeve">
+            <img src="/img/avatar.png" alt="logo头像" class="img-responsive center-block">
+        </a>
+        <div class="branding">
+        	<!--<h2 class="text-hide">Snippet主题,从未如此简单有趣</h2>-->
+            
+                <h2> 畅游星海 </h2>
+            
+    	</div>
+    </div>
+</header>
+    <nav class="main-navigation">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="navbar-header"><span class="nav-toggle-button collapsed pull-right" data-toggle="collapse" data-target="#main-menu" id="mnav">
+                    <span class="sr-only"></span>
+                        <i class="fa fa-bars"></i>
+                    </span>
+                    <a class="navbar-brand" href="https://www.ackurdeeve.com">畅游星海</a>
+                </div>
+                <div class="collapse navbar-collapse" id="main-menu">
+                    <ul class="menu">
+                        
+                            <li role="presentation" class="text-center">
+                                <a href="/"><i class="fa "></i>首页</a>
+                            </li>
+                        
+                            <li role="presentation" class="text-center">
+                                <a href="/categories/Missions/"><i class="fa "></i>任务指南</a>
+                            </li>
+                        
+                            <li role="presentation" class="text-center">
+                                <a href="/categories/Tools/"><i class="fa "></i>实用工具</a>
+                            </li>
+                        
+                            <li role="presentation" class="text-center">
+                                <a href="/categories/Dota2/"><i class="fa "></i>自走棋专区</a>
+                            </li>
+                        
+                            <li role="presentation" class="text-center">
+                                <a href="/categories/Games/"><i class="fa "></i>游戏新闻</a>
+                            </li>
+                        
+                            <li role="presentation" class="text-center">
+                                <a href="/archives/"><i class="fa "></i>存档</a>
+                            </li>
+                        
+                            <li role="presentation" class="text-center">
+                                <a href="/dota2chessbuilds.html"><i class="fa "></i>自走棋模拟器</a>
+                            </li>
+                        
+                            <li role="presentation" class="text-center">
+                                <a href="https://mirror.ackurdeeve.com/" rel="external nofollow noopener noreferrer" target="_blank"><i class="fa /img/omega.png"></i>镜像网站</a>
+                            </li>
+                        
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</nav>
+    <section class="content-wrap">
+        <div class="container">
+            <div class="row">
+                <main class="col-md-8 main-content m-post">
+                    <p id="process"></p>
+<article class="post">
+    <div class="post-head">
+        <h1 id="EVEOnline ESI Excel教程">
+            
+	            EVEOnline ESI Excel教程
+            
+        </h1>
+        <div class="post-meta">
+    
+    <span class="categories-meta fa-wrap">
+        <i class="fa fa-folder-open-o"></i>
+        <a class="category-link" href="/categories/Tools/">Tools</a>
+    </span>
+    
+
+    
+    <span class="fa-wrap">
+        <i class="fa fa-tags"></i>
+        <span class="tags-meta">
+            
+            <a class="tag-link" href="/tags/ESI/">ESI</a> <a class="tag-link" href="/tags/EVEOnline/">EVEOnline</a> <a class="tag-link" href="/tags/Excel/">Excel</a> <a class="tag-link" href="/tags/Postman/">Postman</a>
+            
+        </span>
+    </span>
+    
+    
+    
+    <span class="fa-wrap">
+        <i class="fa fa-clock-o"></i>
+        <span class="date-meta">2019/02/08</span>
+    </span>
+    
+    <span class="fa-wrap">
+        <i class="fa fa-eye"></i>
+        <span id="busuanzi_value_page_pv"></span>
+    </span>
+    
+    
+</div>
+            
+            
+    </div>
+    
+    <div class="post-body post-content">
+        <h2 id="EVEOnline-ESI-Excel教程"><a href="#EVEOnline-ESI-Excel教程" class="headerlink" title="EVEOnline ESI Excel教程"></a>EVEOnline ESI Excel教程</h2><p><strong>A Chinese Guide on ESI request using Excel</strong></p>
+<h2 id="1-简介-博主的第一个MD文档，排版请见谅"><a href="#1-简介-博主的第一个MD文档，排版请见谅" class="headerlink" title="1. 简介(博主的第一个MD文档，排版请见谅)"></a>1. 简介(博主的第一个MD文档，排版请见谅)</h2><hr>
+<p><img src="/img/tools/eve_esi.png" alt="Eve_esi"></p>
+<p>ESI是EVE Swagger Interface的简称。这篇博客将详细的介绍如何利用Excel中强大的Power Query功能调用ESI API，当然通过SSO验证是调用ESI功能的前提条件。目前能够找到的表格都是用Google Sheet实现的，Google嘛大家都了解，大局域网你就当他没有吧。有个问题来了，为什么ESI表格大多用Google Sheet？原因主要是：</p>
+<ul>
+<li><p>ESI返回的是Json格式的数据</p>
+</li>
+<li><p>Google Sheet是可在线浏览和编辑的，原生支持Json文件的解析</p>
+</li>
+<li><p>Google Sheet可以添加触发器自动获取和更新ESI数据</p>
+</li>
+</ul>
+<p>使用Excel最大的缺点就是解析Json数据比较麻烦，但好在上手比较快，另外就是无法在线更新数据，这个给想获取实时数据的玩家带来了不便。不过Excel也不是完全一无是处，毕竟图形界面比较友好，普及率高。有句话说得好，高手在民间，本教程也就是抛砖引玉，希望有高手能够分享更漂亮的表格！</p>
+<p>参考资料 <a href="https://wiki.zansha.space/index.php/SSO_Authentication_in_Microsoft_Power_Query" rel="external nofollow noopener noreferrer" target="_blank">SSO Authentication in Microsoft Power Query</a>。</p>
+<h2 id="2-准备工作"><a href="#2-准备工作" class="headerlink" title="2. 准备工作"></a>2. 准备工作</h2><hr>
+<p><img src="/img/tools/Omega_clone_state.png" style="vertical-align:middle;"><strong><em>提醒：试玩账号！</em></strong></p>
+<figure class="highlight plain"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">必须至少有一个账号完成过至少一次储值，以具备开发者许可。</span><br><span class="line">如果自己实在没有（就想玩免费的，用别人的也行，不过最好是您熟悉的人。</span><br></pre></td></tr></tbody></table></figure>
+<h3 id="2-1-软件"><a href="#2-1-软件" class="headerlink" title="2.1 软件"></a>2.1 软件</h3><ul>
+<li>Microsoft Excel 2016 或以上版本，Office 365</li>
+</ul>
+<p>之所以要求Excel版本，是因为上述版本包含Power Query功能。</p>
+<ul>
+<li>Postman</li>
+</ul>
+<p>完成账号的认证功能。<a href="https://www.getpostman.com/downloads/" rel="external nofollow noopener noreferrer" target="_blank">Postman下载地址</a>,根据自己的操作系统选择64bit或者32bit下载。</p>
+<h3 id="2-2-基本流程"><a href="#2-2-基本流程" class="headerlink" title="2.2 基本流程"></a>2.2 基本流程</h3><p><img src="/img/tools/eve_developer.png" alt="Developers"></p>
+<p>使用上述软件完成ESI调用的基本流程如下：</p>
+<ul>
+<li><p>使用账号登陆<a href="https://developers.eveonline.com/" rel="external nofollow noopener noreferrer" target="_blank">EVEOnline开发者网站</a></p>
+<pre><code>具有开发者账号需要至少完成过一次储值
+</code></pre></li>
+<li><p>使用Postman更新Token</p>
+<pre><code>更新代理请求
+</code></pre></li>
+<li><p>使用Power Query更新账号登入请求</p>
+<pre><code>每20mins就更新一次，这一步比较麻烦，需要使用到Postman生成的代码
+</code></pre></li>
+<li><p>使用Power Query创建<a href="https://esi.evetech.net/ui/" rel="external nofollow noopener noreferrer" target="_blank">ESI</a>调用函数</p>
+<pre><code>具体调用函数可参考ESI网站
+</code></pre></li>
+</ul>
+<h2 id="3-指南"><a href="#3-指南" class="headerlink" title="3. 指南"></a>3. 指南</h2><hr>
+<h3 id="3-1-使用开发者账号创建一个应用"><a href="#3-1-使用开发者账号创建一个应用" class="headerlink" title="3.1 使用开发者账号创建一个应用"></a>3.1 使用开发者账号创建一个应用</h3><p>依次点击<a href="https://developers.eveonline.com/" rel="external nofollow noopener noreferrer" target="_blank">EVEOnline开发者网站</a>–><a href="https://developers.eveonline.com/applications" rel="external nofollow noopener noreferrer" target="_blank">Manage Applications管理应用</a>,登入您的账号。</p>
+<p>您可以看到<a href="https://developers.eveonline.com/applications/create" rel="external nofollow noopener noreferrer" target="_blank">Create New Application创建新的应用</a>按钮。点击进入后，可以看到一个表格。</p>
+<ul>
+<li><p>Name：随便取一个您喜欢的名字</p>
+</li>
+<li><p>Description： 一般都是描述这个应用的功能，可以随便填，比如“asdasdadad”都是可以的</p>
+</li>
+<li><p>CONNECTION TYPE： 这个很重要，必须选取Authentication & API Access ->会出现一个Permissions的新选项。</p>
+</li>
+<li><p>Permissions：这个是通过应用允许调用的ESI函数。如果想获取所有的ESI数据，完全可以全部都点上。</p>
+</li>
+</ul>
+<p><img src="/img/tools/esi_permissions.png" alt="Scope"></p>
+<ul>
+<li>CALLBACK URL: 由于使用的是Postman，这里需要填上 <a href="https://www.getpostman.com/oauth2/callback" rel="external nofollow noopener noreferrer" target="_blank">https://www.getpostman.com/oauth2/callback</a></li>
+</ul>
+<p>填好上述信息后，点击页面最底部的Create Application按钮，提交应用。回到<a href="https://developers.eveonline.com/applications" rel="external nofollow noopener noreferrer" target="_blank">Applications</a>页面，您将看到自己刚才创建的应用。</p>
+<p><img src="/img/tools/esi_applications.png" alt="Applications"></p>
+<p>点击上图中的View Applicaiton按钮，您将看到以下信息， <strong><em>这些信息很重要后面设置Postman需要使用</em></strong>：</p>
+<p><img src="/img/tools/esi_appsetting.png" alt="Appsetting"></p>
+<p>至此，Application这边的设置就完成了。</p>
+<h3 id="3-2-通过Postman获取刷新识别码"><a href="#3-2-通过Postman获取刷新识别码" class="headerlink" title="3.2 通过Postman获取刷新识别码"></a>3.2 通过Postman获取刷新识别码</h3><p>首先您得<a href="https://identity.getpostman.com/signup?addAccount=1" rel="external nofollow noopener noreferrer" target="_blank">注册一个Postman账号</a>。填入Email，Username（账号名）和Password（密码），Create free account即可。完成注册后打开Postman软件登陆，Cancel取消，使用默认截面并点击下图中的Authorization标签。</p>
+<p><img src="/img/tools/postman1.png" alt="Postman1"></p>
+<p>点击Get New Access Token按钮，进入下图设置页面</p>
+<p><img src="/img/tools/postman_token.png" alt="Postman1"></p>
+<p>图中显示为“粘贴过来”的几个空从<a href="https://developers.eveonline.com/applications" rel="external nofollow noopener noreferrer" target="_blank">Applications</a>页面应用详细Application Settings获取，详见3.1节。</p>
+<figure class="highlight plain"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">注意每个Scope，即以“esi开始的字符串”之间有一个空格。</span><br></pre></td></tr></tbody></table></figure>
+<p>设置完成后即可点击Request Token提交，会跳出一个EVE账号登陆窗口，输入您想查询的人物ID即可获取Access Token。</p>
+<p><img src="/img/tools/postman_accessstoken.png" alt="Postman_access"></p>
+<figure class="highlight plain"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">您可以使用同一个eve application应用，修改Postman的Token Name，</span><br><span class="line">登陆不同的人物多次Request Token，则每个人物都有一个独立的refresh token。</span><br><span class="line">点击Available Tokens可以看到您的人物记录。</span><br></pre></td></tr></tbody></table></figure>
+<p>点击Available Tokens下拉菜单，选取Manage Tokens，这个refresh_token后面会用到，如下图所示。</p>
+<p><img src="/img/tools/postman_refreshtoken.png" alt="Postman_refresh_"></p>
+<h3 id="3-3-在EXCEL中获取登入权限token"><a href="#3-3-在EXCEL中获取登入权限token" class="headerlink" title="3.3 在EXCEL中获取登入权限token"></a>3.3 在EXCEL中获取登入权限token</h3><p>打开一个新的Excel表格，确保是2016及以上版本。依次选择“数据”标签->“获取数据”（第一个ribbon）->“自其它源”->“空白查询”，打开Power Query编辑器。在开始标签下点击“高级编辑器”，粘贴下列代码，修改Headers=[ ]中的内容（如何修改见后文中的代码说明），保存后关闭。</p>
+<figure class="highlight plain"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line">(refresh_token) =></span><br><span class="line"></span><br><span class="line">let</span><br><span class="line">    body = Text.ToBinary("grant_type=refresh_token&refresh_token="& (refresh_token) &""),</span><br><span class="line">    actualUrl = "https://login.eveonline.com/oauth/token",</span><br><span class="line">    options =[</span><br><span class="line">        Headers =[</span><br><span class="line">                    #"Content-type"="application/x-www-form-urlencoded",</span><br><span class="line">                    #"User-Agent"="ackurdeeve",</span><br><span class="line">                    #"Authorization"="Basic YzJhNmQyMjExNWM3NDMzMTkzNmYyZjkwMTBlYzgzMmWMTViMkJsNjVOWXFsT1gwM2thVlNHMVFvc09YdA=="</span><br><span class="line">                 ],</span><br><span class="line">                Content=body</span><br><span class="line">             ],</span><br><span class="line"></span><br><span class="line">    result = Web.Contents(actualUrl, options),</span><br><span class="line">    #"Imported JSON" = Json.Document(result,65001),</span><br><span class="line">    access_token = #"Imported JSON"[access_token]</span><br><span class="line">in</span><br><span class="line">    access_token</span><br></pre></td></tr></tbody></table></figure>
+<p>上面代码说明：</p>
+<ul>
+<li>(refresh_token) => 说明该代码是一个函数，输入参数为refresh_token，这个Token与3.2 Postman中最终获得的人物refresh_token相同。输入您的Postman token可以测试是否能够获得一行字符串，如“GuFSyLsTvbivY6v3qiwLptcbEbnUBpwv7-T3hH-_nFYQ3siXTBWaQUcbUtiwlL2B851ECP2Kwb7Dy7TaTHPo8A2”，该字符串可在ESI页面使用。</li>
+</ul>
+<p><strong><em>上面一系列操作都是为了获得这个Code，注意保存</em></strong></p>
+<p><img src="/img/tools/excel_token.png" alt="excel_token"></p>
+<ul>
+<li><p>#”User-Agent” 是一串请求，用于EVE ESI识别应用，实际上不影响代码功能，改成你的应用名或者人物名即可。</p>
+</li>
+<li><p>#”Authorization”比较关键，Basic不要修改，你会用到<a href="https://www.base64encode.org/" rel="external nofollow noopener noreferrer" target="_blank">Base64</a>,在页面中使用这个格式<strong>clientid:secretkey</strong>生成base64码。clientid和secretkey为3.1中设置<a href="https://developers.eveonline.com/applications" rel="external nofollow noopener noreferrer" target="_blank">EVE Applications</a>页面得到的。比如你的clientid是<strong>123123asda123</strong>，secretkey是<em>jasdqeouoq</em>，则输入格式为<em>123123asda123：jasdqeouoq</em>，生成token代码<em>MTIzMTIzYXNkYTEyM++8mmphc2RxZW91b3E=</em>如下图所示</p>
+</li>
+</ul>
+<p><img src="/img/tools/base64.png" alt="excel_token"></p>
+<figure class="highlight plain"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">注意：Basic和生成的代码间有一个空格，其他保持默认即可。</span><br></pre></td></tr></tbody></table></figure>
+<h2 id="4-获取ESI数据"><a href="#4-获取ESI数据" class="headerlink" title="4. 获取ESI数据"></a>4. 获取ESI数据</h2><p>以<a href="https://esi.evetech.net/ui/#/Loyalty" rel="external nofollow noopener noreferrer" target="_blank">获取忠诚点数</a>为例演示如何使用第3节中获取的token。点击下图中的Try it out!可以看到输入的参数：</p>
+<p><img src="/img/tools/esi_loyalty.png" alt="esi_loyalty"></p>
+<ul>
+<li><p>character_id * ：必须的。</p>
+</li>
+<li><p>datasource：可选，“–”视为“tranquility”，“singularity”为测试服。建议选取”–”，可以压缩查询链接的长度</p>
+</li>
+<li><p>token ：必须的，就是第3.3节最后得到的base64码。</p>
+</li>
+</ul>
+<p>id如何获取呢，既然用了ESI，那么就地取材吧。使用<a href="https://esi.evetech.net/ui/#/Search/get_search" rel="external nofollow noopener noreferrer" target="_blank">ESI的Get Search功能</a>。Categories选择character，在search中填入你的id，返回Json格式数据，2113709067就是你的人物id。</p>
+<figure class="highlight plain"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">{</span><br><span class="line">  "character": [</span><br><span class="line">    2113709067</span><br><span class="line">  ]</span><br><span class="line">}</span><br></pre></td></tr></tbody></table></figure>
+<p><img src="/img/tools/esi_getid.png" alt="esi_getid"></p>
+<p>填入所有信息后，点击蓝色的Execute可以得到Request URL：</p>
+<figure class="highlight plain"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">https://esi.evetech.net/latest/characters/2113709067/loyalty/points/?datasource=tranquility&token=yOuQh9Gi4ozcHoeRpAt9kw9lRW6rh37C7_D9wUA1TX0eF5ahcdzGiM12hlTC8LBl5KmhBdp-RGdHouFH6O3Arg2</span><br></pre></td></tr></tbody></table></figure>
+<p>Excel中可通过修改上述链接中的id(2113709067)，以及对应的token值（yOuQh9Gi4ozcHoeRpAt9kw9lRW6rh37C7_D9wUA1TX0eF5ahcdzGiM12hlTC8LBl5KmhBdp-RGdHouFH6O3Arg2）获取ESI数据。每个Token的有效期为20分钟，ESI数据也有有效期，每种数据的有效期都不同，比如lp的介绍为“This route is cached for up to 3600 seconds”，表明ESI LP数据每个小时更新一次，而“/characters/{character_id}/wallet/<br>”cache只有120s，因此没有必要太快的获取实时数据。</p>
+<h2 id="5-EXCEL设置教程"><a href="#5-EXCEL设置教程" class="headerlink" title="5. EXCEL设置教程"></a>5. EXCEL设置教程</h2><p>教程2中提供了一个Tutorial供大家下载参考。</p>
+<h2 id="EVEOnline-ESI-Excel教程（2）"><a href="#EVEOnline-ESI-Excel教程（2）" class="headerlink" title="EVEOnline ESI Excel教程（2）"></a><a href="https://www.ackurdeeve.com/2019/02/09/SSOAuthinExcel-2/">EVEOnline ESI Excel教程（2）</a></h2><h2 id="您可能感兴趣的内容："><a href="#您可能感兴趣的内容：" class="headerlink" title="您可能感兴趣的内容："></a>您可能感兴趣的内容：</h2><h3 id="1-5级任务指引"><a href="#1-5级任务指引" class="headerlink" title="1. 5级任务指引"></a>1. <a href="https://www.ackurdeeve.com/2019/02/11/glv5-index/">5级任务指引</a></h3><h3 id="2-自建游戏加速器"><a href="#2-自建游戏加速器" class="headerlink" title="2. 自建游戏加速器"></a>2. <a href="/2019/02/14/proxy4eve/">自建游戏加速器</a></h3><h2 id="返回主页"><a href="#返回主页" class="headerlink" title="返回主页"></a><a href="https://www.ackurdeeve.com">返回主页</a></h2>
+    </div>
+    
+    <div class="post-footer">
+        <div>
+            
+                转载声明：以上内容均为作者原创，商业转载请联系作者获得授权,非商业转载请注明出处 © <a href="" target="_blank">Ackurdeeve.com</a>
+<br>
+<div>
+    <!-- notific -->
+      <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-9584632072299729" data-ad-slot="2430961061" data-ad-format="auto" data-full-width-responsive="true"></ins>
+      <script>
+          (adsbygoogle = window.adsbygoogle || []).push({});
+      </script>
+</div>
+            
+        </div>
+        <div>
+            
+        </div>
+    </div>
+</article>
+
+<div class="article-nav prev-next-wrap clearfix">
+    
+        <a href="/201902/spfarm-example/" class="pre-post btn btn-default" title="养猪表格Excel版">
+            <i class="fa fa-angle-left fa-fw"></i><span class="hidden-lg">上一篇</span>
+            <span class="hidden-xs">养猪表格Excel版</span>
+        </a>
+    
+    
+        <a href="/201902/eveesi/" class="next-post btn btn-default" title="EVEOnline ESI简介">
+            <span class="hidden-lg">下一篇</span>
+            <span class="hidden-xs">EVEOnline ESI简介</span><i class="fa fa-angle-right fa-fw"></i>
+        </a>
+    
+</div>
+
+
+    <div id="comments">
+        <meta name="generator" content="Hexo 3.8.0"><div id="lv-container" data-id="city" data-uid="MTAyMC80MjYyMS8xOTE2OA==">
+  <script type="text/javascript">
+     (function(d, s) {
+         var j, e = d.getElementsByTagName(s)[0];
+         if (typeof LivereTower === 'function') { return; }
+         j = d.createElement(s);
+         j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
+         j.async = true;
+         e.parentNode.insertBefore(j, e);
+     })(document, 'script');
+  </script>
+</div>
+
+
+    </div>
+
+
+
+
+
+                </main>
+                
+                    <aside id="article-toc" role="navigation" class="col-md-4">
+    <div class="widget">
+        <h3 class="title">文章目录</h3>
+        
+        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#EVEOnline-ESI-Excel教程"><span class="toc-text">EVEOnline ESI Excel教程</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#1-简介-博主的第一个MD文档，排版请见谅"><span class="toc-text">1. 简介(博主的第一个MD文档，排版请见谅)</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2-准备工作"><span class="toc-text">2. 准备工作</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#2-1-软件"><span class="toc-text">2.1 软件</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-2-基本流程"><span class="toc-text">2.2 基本流程</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#3-指南"><span class="toc-text">3. 指南</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#3-1-使用开发者账号创建一个应用"><span class="toc-text">3.1 使用开发者账号创建一个应用</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-2-通过Postman获取刷新识别码"><span class="toc-text">3.2 通过Postman获取刷新识别码</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-3-在EXCEL中获取登入权限token"><span class="toc-text">3.3 在EXCEL中获取登入权限token</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#4-获取ESI数据"><span class="toc-text">4. 获取ESI数据</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#5-EXCEL设置教程"><span class="toc-text">5. EXCEL设置教程</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#EVEOnline-ESI-Excel教程（2）"><span class="toc-text">EVEOnline ESI Excel教程（2）</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#您可能感兴趣的内容："><span class="toc-text">您可能感兴趣的内容：</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-5级任务指引"><span class="toc-text">1. 5级任务指引</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-自建游戏加速器"><span class="toc-text">2. 自建游戏加速器</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#返回主页"><span class="toc-text">返回主页</span></a></li></ol>
+        <hr>
+        <div>
+            <!-- notific -->
+            <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-9584632072299729" data-ad-slot="2430961061" data-ad-format="auto" data-full-width-responsive="true"></ins>
+            <script>
+                (adsbygoogle = window.adsbygoogle || []).push({});
+            </script>
+        </div>
+        
+    </div>
+</aside>
+                
+            </div>
+        </div>
+    </section>
+    <footer class="main-footer">
+    <div class="container">
+        <div class="row">
+            <div>
+                <!-- notific -->
+                <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-9584632072299729" data-ad-slot="2430961061" data-ad-format="auto" data-full-width-responsive="true"></ins>
+                <script>
+                    (adsbygoogle = window.adsbygoogle || []).push({});
+                </script>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<a id="back-to-top" class="icon-btn hide">
+    <i class="fa fa-chevron-up"></i>
+</a>
+    <div class="copyright">
+    <div class="container">
+        <div class="row">      
+            <div class="col-sm-12">
+                <meta name="generator" content="Hexo 3.8.0"><div class="busuanzi">
+    
+        访问量:
+        <strong id="busuanzi_value_site_pv">
+            <i class="fa fa-spinner fa-spin"></i>
+        </strong>
+          |  
+        访客数:
+        <strong id="busuanzi_value_site_uv">
+            <i class="fa fa-spinner fa-spin"></i>
+        </strong>
+    
+</div>
+
+            </div>
+            <div class="col-sm-12">
+                <span>Copyright © 2019
+                </span> |
+                <span>
+                    畅游星海 <a href="//Ackurdeeve.com" class="copyright-links" target="_blank" rel="nofollow">Ackurdeeve.com</a>
+                </span> |
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<meta name="generator" content="Hexo 3.8.0"><script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+
+<script src="/js/app.js?rev=@@hash"></script>
+
+<style type="text/css">
+    html {
+        -ms-user-select: none;
+        -moz-user-select: none;
+        -webkit-user-select: none;
+    }
+</style>
+
+</body></html><!--Title--><!--[if lte IE 8]>
+<style>
+    html{ font-size: 1em }
+</style>
+<![endif]--><!--[if lte IE 9]>
+<div style="ie">你使用的浏览器版本过低，为了你更好的阅读体验，请更新浏览器的版本或者使用其他现代浏览器，比如Chrome、Firefox、Safari等。</div>
+<![endif]-->
