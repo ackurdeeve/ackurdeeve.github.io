@@ -969,490 +969,497 @@ img {
 
 .icon-a-abaddon {
   background-image: url(../images/sprites.png);
-  background-position: -456px -60px;
+  background-position: -456px -120px;
   width: 30px;
   height: 30px;
 }
 
 .icon-a-alchemist {
   background-image: url(../images/sprites.png);
-  background-position: -222px -364px;
+  background-position: -254px -364px;
   width: 30px;
   height: 30px;
 }
 
 .icon-a-antimage {
   background-image: url(../images/sprites.png);
-  background-position: -282px -364px;
+  background-position: -314px -364px;
   width: 30px;
   height: 30px;
 }
 
 .icon-a-axe {
   background-image: url(../images/sprites.png);
-  background-position: -312px -364px;
+  background-position: -344px -364px;
   width: 30px;
   height: 30px;
 }
 
 .icon-a-batrider {
   background-image: url(../images/sprites.png);
-  background-position: -396px -30px;
+  background-position: -396px -60px;
   width: 30px;
   height: 30px;
 }
 
 .icon-a-beastmaster {
   background-image: url(../images/sprites.png);
-  background-position: -396px -150px;
+  background-position: -396px -180px;
   width: 30px;
   height: 30px;
 }
 
 .icon-a-bountyhunter {
   background-image: url(../images/sprites.png);
-  background-position: -90px -396px;
+  background-position: -120px -396px;
   width: 30px;
   height: 30px;
 }
 
 .icon-a-chaosknight {
   background-image: url(../images/sprites.png);
-  background-position: -150px -396px;
+  background-position: -180px -396px;
   width: 30px;
   height: 30px;
 }
 
 .icon-a-clockwerk {
   background-image: url(../images/sprites.png);
-  background-position: -426px -120px;
+  background-position: -426px -180px;
   width: 30px;
   height: 30px;
 }
 
 .icon-a-crystal {
   background-image: url(../images/sprites.png);
-  background-position: -426px -240px;
+  background-position: -426px -270px;
   width: 30px;
   height: 30px;
 }
 
 .icon-a-dazzle {
   background-image: url(../images/sprites.png);
-  background-position: -426px -360px;
+  background-position: -426px -390px;
   width: 30px;
   height: 30px;
 }
 
 .icon-a-deathprophet {
   background-image: url(../images/sprites.png);
-  background-position: -60px -426px;
+  background-position: -90px -426px;
   width: 30px;
   height: 30px;
 }
 
 .icon-a-disruptor {
   background-image: url(../images/sprites.png);
-  background-position: -456px -30px;
+  background-position: -456px -90px;
   width: 30px;
   height: 30px;
 }
 
 .icon-a-doom {
   background-image: url(../images/sprites.png);
-  background-position: -456px 0px;
+  background-position: -456px -60px;
   width: 30px;
   height: 30px;
 }
 
 .icon-a-dragonknight {
   background-image: url(../images/sprites.png);
-  background-position: -420px -426px;
+  background-position: -456px -30px;
   width: 30px;
   height: 30px;
 }
 
 .icon-a-drowranger {
   background-image: url(../images/sprites.png);
-  background-position: -390px -426px;
+  background-position: -456px 0px;
   width: 30px;
   height: 30px;
 }
 
 .icon-a-enchantress {
   background-image: url(../images/sprites.png);
-  background-position: -360px -426px;
+  background-position: -420px -426px;
   width: 30px;
   height: 30px;
 }
 
 .icon-a-enigma {
   background-image: url(../images/sprites.png);
-  background-position: -330px -426px;
+  background-position: -390px -426px;
   width: 30px;
   height: 30px;
 }
 
 .icon-a-furion {
   background-image: url(../images/sprites.png);
-  background-position: -300px -426px;
+  background-position: -360px -426px;
   width: 30px;
   height: 30px;
 }
 
 .icon-a-gyrocopter {
   background-image: url(../images/sprites.png);
-  background-position: -270px -426px;
+  background-position: -330px -426px;
   width: 30px;
   height: 30px;
 }
 
 .icon-a-io {
   background-image: url(../images/sprites.png);
-  background-position: -240px -426px;
+  background-position: -300px -426px;
   width: 30px;
   height: 30px;
 }
 
 .icon-a-juggernaut {
   background-image: url(../images/sprites.png);
-  background-position: -210px -426px;
+  background-position: -270px -426px;
   width: 30px;
   height: 30px;
 }
 
 .icon-a-kunkka {
   background-image: url(../images/sprites.png);
-  background-position: -120px -426px;
+  background-position: -240px -426px;
   width: 30px;
   height: 30px;
 }
 
 .icon-a-lich {
   background-image: url(../images/sprites.png);
-  background-position: -90px -426px;
+  background-position: -150px -426px;
   width: 30px;
   height: 30px;
 }
 
 .icon-a-lightkeeper {
   background-image: url(../images/sprites.png);
-  background-position: -30px -426px;
+  background-position: -120px -426px;
   width: 30px;
   height: 30px;
 }
 
 .icon-a-lina {
   background-image: url(../images/sprites.png);
-  background-position: 0px -426px;
+  background-position: -60px -426px;
   width: 30px;
   height: 30px;
 }
 
 .icon-a-lonedruid {
   background-image: url(../images/sprites.png);
-  background-position: -426px -390px;
+  background-position: -30px -426px;
   width: 30px;
   height: 30px;
 }
 
 .icon-a-luna {
   background-image: url(../images/sprites.png);
-  background-position: -426px -330px;
+  background-position: 0px -426px;
   width: 30px;
   height: 30px;
 }
 
 .icon-a-lycan {
   background-image: url(../images/sprites.png);
-  background-position: -426px -300px;
+  background-position: -426px -360px;
   width: 30px;
   height: 30px;
 }
 
 .icon-a-mars {
   background-image: url(../images/sprites.png);
-  background-position: -426px -270px;
+  background-position: -426px -330px;
   width: 30px;
   height: 30px;
 }
 
 .icon-a-medusa {
   background-image: url(../images/sprites.png);
-  background-position: -426px -210px;
+  background-position: -426px -300px;
   width: 30px;
   height: 30px;
 }
 
 .icon-a-mirana {
   background-image: url(../images/sprites.png);
-  background-position: -426px -180px;
+  background-position: -426px -240px;
   width: 30px;
   height: 30px;
 }
 
 .icon-a-morphling {
   background-image: url(../images/sprites.png);
-  background-position: -426px -150px;
+  background-position: -426px -210px;
   width: 30px;
   height: 30px;
 }
 
 .icon-a-necrophos {
   background-image: url(../images/sprites.png);
-  background-position: -192px -364px;
+  background-position: -224px -364px;
   width: 30px;
   height: 30px;
 }
 
 .icon-a-ogremagi {
   background-image: url(../images/sprites.png);
-  background-position: -426px -90px;
+  background-position: -426px -150px;
   width: 30px;
   height: 30px;
 }
 
 .icon-a-omniknight {
   background-image: url(../images/sprites.png);
-  background-position: -426px -60px;
+  background-position: -426px -120px;
   width: 30px;
   height: 30px;
 }
 
 .icon-a-painqueen {
   background-image: url(../images/sprites.png);
-  background-position: -426px -30px;
+  background-position: -426px -90px;
   width: 30px;
   height: 30px;
 }
 
 .icon-a-phantomassassin {
   background-image: url(../images/sprites.png);
-  background-position: -426px 0px;
+  background-position: -426px -60px;
   width: 30px;
   height: 30px;
 }
 
 .icon-a-puck {
   background-image: url(../images/sprites.png);
-  background-position: -390px -396px;
+  background-position: -426px -30px;
   width: 30px;
   height: 30px;
 }
 
 .icon-a-razor {
   background-image: url(../images/sprites.png);
-  background-position: -360px -396px;
+  background-position: -426px 0px;
   width: 30px;
   height: 30px;
 }
 
 .icon-a-riki {
   background-image: url(../images/sprites.png);
-  background-position: -330px -396px;
+  background-position: -390px -396px;
   width: 30px;
   height: 30px;
 }
 
 .icon-a-sandking {
   background-image: url(../images/sprites.png);
-  background-position: -300px -396px;
+  background-position: -360px -396px;
   width: 30px;
   height: 30px;
 }
 
 .icon-a-shadowfiend {
   background-image: url(../images/sprites.png);
-  background-position: -270px -396px;
+  background-position: -330px -396px;
   width: 30px;
   height: 30px;
 }
 
 .icon-a-shadowshaman {
   background-image: url(../images/sprites.png);
-  background-position: -240px -396px;
+  background-position: -300px -396px;
   width: 30px;
   height: 30px;
 }
 
 .icon-a-slardar {
   background-image: url(../images/sprites.png);
-  background-position: -210px -396px;
+  background-position: -270px -396px;
   width: 30px;
   height: 30px;
 }
 
 .icon-a-slark {
   background-image: url(../images/sprites.png);
-  background-position: -180px -396px;
+  background-position: -240px -396px;
   width: 30px;
   height: 30px;
 }
 
 .icon-a-sniper {
   background-image: url(../images/sprites.png);
-  background-position: -120px -396px;
+  background-position: -210px -396px;
   width: 30px;
   height: 30px;
 }
 
 .icon-a-sven {
   background-image: url(../images/sprites.png);
-  background-position: -60px -396px;
+  background-position: -150px -396px;
   width: 30px;
   height: 30px;
 }
 
 .icon-a-techies {
   background-image: url(../images/sprites.png);
-  background-position: -30px -396px;
+  background-position: -90px -396px;
   width: 30px;
   height: 30px;
 }
 
 .icon-a-templarassassin {
   background-image: url(../images/sprites.png);
-  background-position: 0px -396px;
+  background-position: -60px -396px;
   width: 30px;
   height: 30px;
 }
 
 .icon-a-terrorblade {
   background-image: url(../images/sprites.png);
-  background-position: -396px -360px;
+  background-position: -30px -396px;
   width: 30px;
   height: 30px;
 }
 
 .icon-a-tiderhunter {
   background-image: url(../images/sprites.png);
-  background-position: -396px -330px;
+  background-position: 0px -396px;
   width: 30px;
   height: 30px;
 }
 
 .icon-a-timbersaw {
   background-image: url(../images/sprites.png);
-  background-position: -396px -300px;
+  background-position: -396px -360px;
   width: 30px;
   height: 30px;
 }
 
 .icon-a-tinker {
   background-image: url(../images/sprites.png);
-  background-position: -396px -270px;
+  background-position: -396px -330px;
   width: 30px;
   height: 30px;
 }
 
 .icon-a-tiny {
   background-image: url(../images/sprites.png);
-  background-position: -396px -240px;
+  background-position: -396px -300px;
   width: 30px;
   height: 30px;
 }
 
 .icon-a-treantprotector {
   background-image: url(../images/sprites.png);
-  background-position: -396px -210px;
+  background-position: -396px -270px;
   width: 30px;
   height: 30px;
 }
 
 .icon-a-troll {
   background-image: url(../images/sprites.png);
-  background-position: -396px -180px;
+  background-position: -396px -240px;
   width: 30px;
   height: 30px;
 }
 
 .icon-a-tusk {
   background-image: url(../images/sprites.png);
-  background-position: -396px -120px;
+  background-position: -396px -210px;
   width: 30px;
   height: 30px;
 }
 
 .icon-a-venomancer {
   background-image: url(../images/sprites.png);
-  background-position: -396px -90px;
+  background-position: -396px -150px;
   width: 30px;
   height: 30px;
 }
 
 .icon-a-viper {
   background-image: url(../images/sprites.png);
-  background-position: -396px -60px;
+  background-position: -396px -120px;
   width: 30px;
   height: 30px;
 }
 
 .icon-a-windranger {
   background-image: url(../images/sprites.png);
-  background-position: -396px 0px;
+  background-position: -396px -90px;
+  width: 30px;
+  height: 30px;
+}
+
+.icon-a-winterwyvern {
+  background-image: url(../images/sprites.png);
+  background-position: -396px -30px;
   width: 30px;
   height: 30px;
 }
 
 .icon-a-witchdoctor {
   background-image: url(../images/sprites.png);
-  background-position: -342px -364px;
+  background-position: -396px 0px;
   width: 30px;
   height: 30px;
 }
 
 .icon-a-zeus {
   background-image: url(../images/sprites.png);
-  background-position: -252px -364px;
+  background-position: -284px -364px;
   width: 30px;
   height: 30px;
 }
 
 .icon-abaddon {
   background-image: url(../images/sprites.png);
-  background-position: -332px -192px;
+  background-position: -332px -224px;
   width: 32px;
   height: 32px;
 }
 
 .icon-alchemist {
   background-image: url(../images/sprites.png);
-  background-position: -332px -224px;
+  background-position: -332px -256px;
   width: 32px;
   height: 32px;
 }
 
 .icon-antimage {
   background-image: url(../images/sprites.png);
-  background-position: -332px -256px;
+  background-position: -332px -288px;
   width: 32px;
   height: 32px;
 }
 
 .icon-axe {
   background-image: url(../images/sprites.png);
-  background-position: -332px -288px;
+  background-position: 0px -332px;
   width: 32px;
   height: 32px;
 }
 
 .icon-batrider {
   background-image: url(../images/sprites.png);
-  background-position: 0px -332px;
+  background-position: -32px -332px;
   width: 32px;
   height: 32px;
 }
 
 .icon-beastmaster {
   background-image: url(../images/sprites.png);
-  background-position: -32px -332px;
+  background-position: -64px -332px;
   width: 32px;
   height: 32px;
 }
 
 .icon-bishop-small {
   background-image: url(../images/sprites.png);
-  background-position: -456px -115px;
+  background-position: -456px -175px;
   width: 25px;
   height: 25px;
 }
@@ -1466,7 +1473,7 @@ img {
 
 .icon-bountyhunter {
   background-image: url(../images/sprites.png);
-  background-position: -128px -332px;
+  background-position: -160px -332px;
   width: 32px;
   height: 32px;
 }
@@ -1655,56 +1662,56 @@ img {
 
 .icon-candy-small {
   background-image: url(../images/sprites.png);
-  background-position: -456px -260px;
+  background-position: -456px -320px;
   width: 20px;
   height: 20px;
 }
 
 .icon-candy-tiny {
   background-image: url(../images/sprites.png);
-  background-position: -456px -280px;
+  background-position: -456px -340px;
   width: 15px;
   height: 15px;
 }
 
 .icon-chaosknight {
   background-image: url(../images/sprites.png);
-  background-position: -332px -128px;
+  background-position: -332px -160px;
   width: 32px;
   height: 32px;
 }
 
 .icon-clockwerk {
   background-image: url(../images/sprites.png);
-  background-position: -332px -96px;
+  background-position: -332px -128px;
   width: 32px;
   height: 32px;
 }
 
 .icon-cooldown {
   background-image: url(../images/sprites.png);
-  background-position: -456px -240px;
+  background-position: -456px -300px;
   width: 20px;
   height: 20px;
 }
 
 .icon-crystal {
   background-image: url(../images/sprites.png);
-  background-position: -332px -64px;
+  background-position: -332px -96px;
   width: 32px;
   height: 32px;
 }
 
 .icon-dazzle {
   background-image: url(../images/sprites.png);
-  background-position: -332px -32px;
+  background-position: -332px -64px;
   width: 32px;
   height: 32px;
 }
 
 .icon-deathprophet {
   background-image: url(../images/sprites.png);
-  background-position: -332px 0px;
+  background-position: -332px -32px;
   width: 32px;
   height: 32px;
 }
@@ -1718,77 +1725,77 @@ img {
 
 .icon-disruptor {
   background-image: url(../images/sprites.png);
-  background-position: -288px -300px;
+  background-position: -332px 0px;
   width: 32px;
   height: 32px;
 }
 
 .icon-doom {
   background-image: url(../images/sprites.png);
-  background-position: -256px -300px;
+  background-position: -288px -300px;
   width: 32px;
   height: 32px;
 }
 
 .icon-dragonknight {
   background-image: url(../images/sprites.png);
-  background-position: -224px -300px;
+  background-position: -256px -300px;
   width: 32px;
   height: 32px;
 }
 
 .icon-drowranger {
   background-image: url(../images/sprites.png);
-  background-position: -192px -300px;
+  background-position: -224px -300px;
   width: 32px;
   height: 32px;
 }
 
 .icon-enchantress {
   background-image: url(../images/sprites.png);
-  background-position: -160px -300px;
+  background-position: -192px -300px;
   width: 32px;
   height: 32px;
 }
 
 .icon-enigma {
   background-image: url(../images/sprites.png);
-  background-position: -128px -300px;
+  background-position: -160px -300px;
   width: 32px;
   height: 32px;
 }
 
 .icon-furion {
   background-image: url(../images/sprites.png);
-  background-position: -96px -300px;
+  background-position: -128px -300px;
   width: 32px;
   height: 32px;
 }
 
 .icon-gyrocopter {
   background-image: url(../images/sprites.png);
-  background-position: -64px -300px;
+  background-position: -96px -300px;
   width: 32px;
   height: 32px;
 }
 
 .icon-io {
   background-image: url(../images/sprites.png);
-  background-position: -32px -300px;
+  background-position: -64px -300px;
   width: 32px;
   height: 32px;
 }
 
 .icon-juggernaut {
   background-image: url(../images/sprites.png);
-  background-position: 0px -300px;
+  background-position: -32px -300px;
   width: 32px;
   height: 32px;
 }
 
 .icon-king-small {
   background-image: url(../images/sprites.png);
-  background-position: -456px -215px;
+  background-position: -456px -275px;
   width: 25px;
   height: 25px;
 }
@@ -1802,7 +1809,7 @@ img {
 
 .icon-knight-small {
   background-image: url(../images/sprites.png);
-  background-position: -456px -140px;
+  background-position: -456px -200px;
   width: 25px;
   height: 25px;
 }
@@ -1816,112 +1823,112 @@ img {
 
 .icon-kunkka {
   background-image: url(../images/sprites.png);
-  background-position: -300px -192px;
+  background-position: -300px -224px;
   width: 32px;
   height: 32px;
 }
 
 .icon-lich {
   background-image: url(../images/sprites.png);
-  background-position: -300px -160px;
+  background-position: -300px -192px;
   width: 32px;
   height: 32px;
 }
 
 .icon-lightkeeper {
   background-image: url(../images/sprites.png);
-  background-position: -300px -128px;
+  background-position: -300px -160px;
   width: 32px;
   height: 32px;
 }
 
 .icon-lina {
   background-image: url(../images/sprites.png);
-  background-position: -300px -96px;
+  background-position: -300px -128px;
   width: 32px;
   height: 32px;
 }
 
 .icon-lonedruid {
   background-image: url(../images/sprites.png);
-  background-position: -300px -64px;
+  background-position: -300px -96px;
   width: 32px;
   height: 32px;
 }
 
 .icon-luna {
   background-image: url(../images/sprites.png);
-  background-position: -300px -32px;
+  background-position: -300px -64px;
   width: 32px;
   height: 32px;
 }
 
 .icon-lycan {
   background-image: url(../images/sprites.png);
-  background-position: -300px 0px;
+  background-position: -300px -32px;
   width: 32px;
   height: 32px;
 }
 
 .icon-mars {
   background-image: url(../images/sprites.png);
-  background-position: -260px -250px;
+  background-position: -300px 0px;
   width: 32px;
   height: 32px;
 }
 
 .icon-medusa {
   background-image: url(../images/sprites.png);
-  background-position: -228px -250px;
+  background-position: -260px -250px;
   width: 32px;
   height: 32px;
 }
 
 .icon-mirana {
   background-image: url(../images/sprites.png);
-  background-position: -196px -250px;
+  background-position: -228px -250px;
   width: 32px;
   height: 32px;
 }
 
 .icon-morphling {
   background-image: url(../images/sprites.png);
-  background-position: -164px -250px;
+  background-position: -196px -250px;
   width: 32px;
   height: 32px;
 }
 
 .icon-necrophos {
   background-image: url(../images/sprites.png);
-  background-position: -132px -250px;
+  background-position: -164px -250px;
   width: 32px;
   height: 32px;
 }
 
 .icon-ogremagi {
   background-image: url(../images/sprites.png);
-  background-position: -100px -250px;
+  background-position: -132px -250px;
   width: 32px;
   height: 32px;
 }
 
 .icon-omniknight {
   background-image: url(../images/sprites.png);
-  background-position: -160px -364px;
+  background-position: -100px -250px;
   width: 32px;
   height: 32px;
 }
 
 .icon-painqueen {
   background-image: url(../images/sprites.png);
-  background-position: -128px -364px;
+  background-position: -192px -364px;
   width: 32px;
   height: 32px;
 }
 
 .icon-pawn-small {
   background-image: url(../images/sprites.png);
-  background-position: -456px -90px;
+  background-position: -456px -150px;
   width: 25px;
   height: 25px;
 }
@@ -1935,21 +1942,21 @@ img {
 
 .icon-phantomassassin {
   background-image: url(../images/sprites.png);
-  background-position: -64px -364px;
+  background-position: -128px -364px;
   width: 32px;
   height: 32px;
 }
 
 .icon-puck {
   background-image: url(../images/sprites.png);
-  background-position: -32px -364px;
+  background-position: -96px -364px;
   width: 32px;
   height: 32px;
 }
 
 .icon-queen-small {
   background-image: url(../images/sprites.png);
-  background-position: -456px -165px;
+  background-position: -456px -225px;
   width: 25px;
   height: 25px;
 }
@@ -1963,21 +1970,21 @@ img {
 
 .icon-razor {
   background-image: url(../images/sprites.png);
-  background-position: -364px -320px;
+  background-position: -32px -364px;
   width: 32px;
   height: 32px;
 }
 
 .icon-riki {
   background-image: url(../images/sprites.png);
-  background-position: -364px -288px;
+  background-position: 0px -364px;
   width: 32px;
   height: 32px;
 }
 
 .icon-rook-small {
   background-image: url(../images/sprites.png);
-  background-position: -456px -190px;
+  background-position: -456px -250px;
   width: 25px;
   height: 25px;
 }
@@ -1991,168 +1998,175 @@ img {
 
 .icon-sandking {
   background-image: url(../images/sprites.png);
-  background-position: -364px -224px;
+  background-position: -364px -288px;
   width: 32px;
   height: 32px;
 }
 
 .icon-save-yellow {
   background-image: url(../images/sprites.png);
-  background-position: -150px -426px;
+  background-position: -180px -426px;
   width: 30px;
   height: 30px;
 }
 
 .icon-save {
   background-image: url(../images/sprites.png);
-  background-position: -180px -426px;
+  background-position: -210px -426px;
   width: 30px;
   height: 30px;
 }
 
 .icon-shadowfiend {
   background-image: url(../images/sprites.png);
-  background-position: -364px -192px;
+  background-position: -364px -256px;
   width: 32px;
   height: 32px;
 }
 
 .icon-shadowshaman {
   background-image: url(../images/sprites.png);
-  background-position: -364px -160px;
+  background-position: -364px -224px;
   width: 32px;
   height: 32px;
 }
 
 .icon-slardar {
   background-image: url(../images/sprites.png);
-  background-position: -364px -128px;
+  background-position: -364px -192px;
   width: 32px;
   height: 32px;
 }
 
 .icon-slark {
   background-image: url(../images/sprites.png);
-  background-position: -364px -96px;
+  background-position: -364px -160px;
   width: 32px;
   height: 32px;
 }
 
 .icon-sniper {
   background-image: url(../images/sprites.png);
-  background-position: -364px -64px;
+  background-position: -364px -128px;
   width: 32px;
   height: 32px;
 }
 
 .icon-sven {
   background-image: url(../images/sprites.png);
-  background-position: -364px -32px;
+  background-position: -364px -96px;
   width: 32px;
   height: 32px;
 }
 
 .icon-techies {
   background-image: url(../images/sprites.png);
-  background-position: -364px 0px;
+  background-position: -364px -64px;
   width: 32px;
   height: 32px;
 }
 
 .icon-templarassassin {
   background-image: url(../images/sprites.png);
-  background-position: -320px -332px;
+  background-position: -364px -32px;
   width: 32px;
   height: 32px;
 }
 
 .icon-terrorblade {
   background-image: url(../images/sprites.png);
-  background-position: -288px -332px;
+  background-position: -364px 0px;
   width: 32px;
   height: 32px;
 }
 
 .icon-tiderhunter {
   background-image: url(../images/sprites.png);
-  background-position: -256px -332px;
+  background-position: -320px -332px;
   width: 32px;
   height: 32px;
 }
 
 .icon-timbersaw {
   background-image: url(../images/sprites.png);
-  background-position: -224px -332px;
+  background-position: -288px -332px;
   width: 32px;
   height: 32px;
 }
 
 .icon-tinker {
   background-image: url(../images/sprites.png);
-  background-position: -192px -332px;
+  background-position: -256px -332px;
   width: 32px;
   height: 32px;
 }
 
 .icon-tiny {
   background-image: url(../images/sprites.png);
-  background-position: -160px -332px;
+  background-position: -224px -332px;
   width: 32px;
   height: 32px;
 }
 
 .icon-treantprotector {
   background-image: url(../images/sprites.png);
-  background-position: -96px -332px;
+  background-position: -192px -332px;
   width: 32px;
   height: 32px;
 }
 
 .icon-troll {
   background-image: url(../images/sprites.png);
-  background-position: -64px -332px;
+  background-position: -128px -332px;
   width: 32px;
   height: 32px;
 }
 
 .icon-tusk {
   background-image: url(../images/sprites.png);
-  background-position: -332px -160px;
+  background-position: -96px -332px;
   width: 32px;
   height: 32px;
 }
 
 .icon-venomancer {
   background-image: url(../images/sprites.png);
-  background-position: -300px -256px;
+  background-position: -332px -192px;
   width: 32px;
   height: 32px;
 }
 
 .icon-viper {
   background-image: url(../images/sprites.png);
-  background-position: -300px -224px;
+  background-position: 0px -300px;
   width: 32px;
   height: 32px;
 }
 
 .icon-windranger {
   background-image: url(../images/sprites.png);
-  background-position: -96px -364px;
+  background-position: -300px -256px;
+  width: 32px;
+  height: 32px;
+}
+
+.icon-winterwyvern {
+  background-image: url(../images/sprites.png);
+  background-position: -160px -364px;
   width: 32px;
   height: 32px;
 }
 
 .icon-witchdoctor {
   background-image: url(../images/sprites.png);
-  background-position: 0px -364px;
+  background-position: -64px -364px;
   width: 32px;
   height: 32px;
 }
 
 .icon-zeus {
   background-image: url(../images/sprites.png);
-  background-position: -364px -256px;
+  background-position: -364px -320px;
   width: 32px;
   height: 32px;
 }
@@ -8206,9 +8220,5 @@ img {
 .video-instagram video {
   max-width: 100%;
 }
-
-/* .google_ads{ width: 320px; height: 90px; }
-@media(min-width: 500px) { .google_ads { width: 468px; height: 60px; } }
-@media(min-width: 800px) { .google_ads { width: 728px; height: 90px; } } */
 
 /*# sourceMappingURL=index.css.map */
