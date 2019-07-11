@@ -3,6 +3,7 @@
     <link rel="dns-prefetch" href="https://www.ackurdeeve.com">
     <link rel="stylesheet" href="css/bower.css" type="text/css">
     <link rel="stylesheet" href="css/index.css" type="text/css">
+    <link rel="stylesheet" href="css/icon-update.css" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Lora|Karla|Iceland" rel="stylesheet">
     <link rel="icon" href="img/omega.png">
     <meta name="description" content="刀塔自走棋英雄列表，具有筛选不同种族英雄，显示英雄基本属性、所属种族、以及金币花费，显示种族、技能的详细说明属性不同等级英雄显示技能伤害、技能内置CD和技能CD等功能。">
@@ -63,29 +64,6 @@
         })();
     </script>
 
-
-    <script language="Javascript">
-        document.onselectstart = new Function("event.returnValue=false");
-        document.keydown = function (e) {
-            if (e.ctrlKey && (e.keyCode == 65 || e.keyCode == 67)) {
-                return false;
-            }
-        };
-    </script>
-
-    <!--<div class="hide">-->
-    <!--<script type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? "https://" : "http://");-->
-    <!--document.write(unescape("%3Cspan id='cnzz_stat_icon_1276110270'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s23.cnzz.com/z_stat.php%3Fid%3D1276110270' type='text/javascript'%3E%3C/script%3E"));-->
-    <!--</script>-->
-    <!--</div>-->
-
-    <style type="text/css">
-        html {
-            -ms-user-select: none;
-            -moz-user-select: none;
-            -webkit-user-select: none;
-        }
-    </style>
 </head>
 
 <body>
@@ -383,6 +361,11 @@
 (9) 战士: 所有友方战士的护甲+9">
                 <span></span>
                 <div class="icon-c-warrior"></div>
+            </div>
+            <div class="add-build__class" data-build-class="Wizard" title="巫师
+(2) 巫师：使需要4个及以上棋子的种族/职业触发所需要的棋子数-1">
+                <span></span>
+                <div class="icon-c-wizard"></div>
             </div>
             <span data-build-results="0"></span>
         </div>
@@ -1347,9 +1330,14 @@
                                 <div class="hero__class-content">
                                     <div class="hero__class-arrow"></div>
                                     <div class="icon-c-god mb-5"></div>
+                                    <span>种族技能: 独尊</span>
                                     <div>
-                                        <span>(1) 神:</span> 所有友军获得效果：技能冷却时间 -50%. <br>
-                                        <span>(2) 神:</span> 所有友军获得效果：技能冷却时间 -50%. <br><br>如果己方场上没有触发除神以外的任何其他种族技能.
+                                        <br>
+                                        <span>(1) 神:</span> 所有友军获得效果：技能冷却时间 -30%. <br>
+                                        <span>(2) 神:</span> 所有友军获得效果：技能冷却时间 -40%. <br>
+                                        <span>(3) 神:</span> 所有友军获得效果：技能冷却时间 -50%. <br>
+                                        <br>
+                                        如果己方场上没有触发除神以外的任何其他种族技能.
                                     </div>
                                 </div>
                             </div>
@@ -2625,6 +2613,81 @@
                         </div>
                     </div>
                 </div>
+                <div class="hero" data-hero-search="Rubick">
+                    <div class="hero__name color-uncommon flex items-center">
+                        <div class="icon-rubick mr-5"></div>
+                        大魔导师 ★
+                    </div>
+                    <div class="hero__classes">
+                        <div class="hero__class hero__class--god">
+                            神族
+                            <div class="hero__class-text">
+                                <div class="hero__class-content">
+                                    <div class="hero__class-arrow"></div>
+                                    <div class="icon-c-god mb-5"></div>
+                                    <span>种族技能: 独尊</span>
+                                    <div>
+                                        <br>
+                                        <span>(1) 神:</span> 所有友军获得效果：技能冷却时间 -30%. <br>
+                                        <span>(2) 神:</span> 所有友军获得效果：技能冷却时间 -40%. <br>
+                                        <span>(3) 神:</span> 所有友军获得效果：技能冷却时间 -50%. <br>
+                                        <br>
+                                        如果己方场上没有触发除神以外的任何其他种族技能.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="hero__class hero__class--wizard">
+                            巫师
+                            <div class="hero__class-text">
+                                <div class="hero__class-content">
+                                    <div class="hero__class-arrow"></div>
+                                    <div class="icon-c-wizard mb-5"></div>
+                                    <span>种族技能: 无中生有</span>
+                                    <div>
+                                        <br>
+                                        <span>（2）巫师：使需要4个及以上棋子的种族/职业触发所需要的棋子数-1 <br>
+                                    </span></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="hero__ability">
+                        <div class="icon-a-rubick"></div>
+                        <div class="hero__ability-text">
+                            <div class="hero__ability-content">
+                                <div class="hero__ability-arrow"></div>
+                                <div class="hero__ability-name">技能窃取</div>
+                                <div>大魔导师擅长钻研敌方棋子的魔法精华之痕，学习这个棋子技能的秘密。<br>
+                                    在战斗回合开始的时候，大魔导师会偷学一个随机的敌方棋子获得他的技能，代替“技能窃取”。会在战斗回合失败的时候将自己的技能重置为“技能窃取。
+                                </div>
+                                <span>技能类型:</span>
+                                <p>主动技能</p><br>
+                                <span>窃取技能等级:</span> 1 / 2 / 3<br>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="hero__cost">
+                        <span>$</span>
+                        <i class="ion-close"></i>
+                        2
+                    </div>
+                    <div class="hero__stats dark-table">
+                        <div class="dark-table__content">
+                            <span>生命值:</span>
+                            550 / 1100 / 2200 <br>
+                            <span>护甲:</span>
+                            0 / 0 / 0 <br>
+                            <span>魔法抗性:</span>
+                            0 / 0 / 0 <br>
+                            <span>攻击力:</span>
+                            40-60 / 80-120 / 160-240 <br>
+                            <span>攻击速度:</span>
+                            1.4 / 1.4 / 1.4 <br>
+                        </div>
+                    </div>
+                </div>
+
                 <div class="hero" data-hero-search="Lycan">
                     <div class="hero__name color-rare flex items-center">
                         <div class="icon-lycan mr-5"></div>
@@ -4667,6 +4730,82 @@
                         </div>
                     </div>
                 </div>
+                <div class="hero" data-hero-search="Grimstroke">
+                    <div class="hero__name color-legendary flex items-center">
+                        <div class="icon-grimstroke mr-5"></div>
+                        天涯墨客 ★
+                    </div>
+                    <div class="hero__classes">
+                         <div class="hero__class hero__class--demon">
+                            恶魔
+                            <div class="hero__class-text">
+                                <div class="hero__class-content">
+                                    <div class="hero__class-arrow"></div>
+                                    <div class="icon-c-demon mb-5"></div>
+                                    <div>
+                                        <span>(1) 恶魔:</span> 攻击力 +50% 纯粹伤害<br><br>仅当上场一种恶魔时生效
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="hero__class hero__class--wizard">
+                            巫师
+                            <div class="hero__class-text">
+                                <div class="hero__class-content">
+                                    <div class="hero__class-arrow"></div>
+                                    <div class="icon-c-wizard mb-5"></div>
+                                    <span>种族技能: 无中生有</span>
+                                    <div>
+                                        <br>
+                                        <span>（2）巫师：使需要4个及以上棋子的种族/职业触发所需要的棋子数-1 <br>
+                                    </span></div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="hero__ability">
+                        <div class="icon-a-grimstroke"></div>
+                        <div class="hero__ability-text">
+                            <div class="hero__ability-content">
+                                <div class="hero__ability-arrow"></div>
+                                <div class="hero__ability-name">命运之笔</div>
+
+                                <div>天涯墨客画出一道墨迹，对一条线上敌方棋子造成递增的伤害和缚魂效果(受到敌对指向性技能影响时，指向性技能会同时作用于其他缚魂效果的棋子)。</div>
+                                <span>类型:</span><p>主动技能</p><br>
+                                <span>伤害:</span> 100 / 150 / 200<br>
+                                <span>伤害递增:</span> 30 / 45 / 60<br>
+                                <span>墨迹轨迹:</span> 1400<br>
+                                <span>缚魂持续时间:</span> 10 / 15 / 20<br><span></span> <br>
+                                <div class="hero__ability-cooldown flex items-center">
+                                    <span class="icon-cooldown mr-3"></span>
+                                    16 / 12 /8
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="hero__cost">
+                        <span>$</span>
+                        <i class="ion-close"></i>
+                        4
+                    </div>
+
+                    <div class="hero__stats dark-table">
+                        <div class="dark-table__content">
+                            <span>生命值:</span>
+                            750 / 1500 / 3000 <br>
+                            <span>护甲:</span>
+                            5 / 5 / 5 <br>
+                            <span>魔法抗性:</span>
+                            0 / 0 / 0 <br>
+                            <span>攻击力:</span>
+                            50-110 / 100-220 / 200-440 <br>
+                            <span>攻击速度:</span>
+                            1.4 / 1.4 / 1.4 <br>
+                        </div>
+                    </div>
+                </div>
+
                 <div class="hero" data-hero-search="Gyrocopter">
                     <div class="hero__name color-immortal flex items-center">
                         <div class="icon-gyrocopter mr-5"></div>
@@ -5077,8 +5216,11 @@
                                     <span>种族技能: 独尊</span>
                                     <div>
                                         <br>
-                                        <span>(1) 神:</span> 所有友军获得效果：技能冷却时间 -50%. <br>
-                                        <span>(2) 神:</span> 所有友军获得效果：技能冷却时间 -50%. <br><br>如果己方场上没有触发除神以外的任何其他种族技能.
+                                        <span>(1) 神:</span> 所有友军获得效果：技能冷却时间 -30%. <br>
+                                        <span>(2) 神:</span> 所有友军获得效果：技能冷却时间 -40%. <br>
+                                        <span>(3) 神:</span> 所有友军获得效果：技能冷却时间 -50%. <br>
+                                        <br>
+                                        如果己方场上没有触发除神以外的任何其他种族技能.
                                     </div>
                                 </div>
                             </div>
@@ -5381,6 +5523,7 @@
         "LoneDruid": "利爪德鲁伊",
         "Gyrocopter": "矮人直升机",
         "Lich": "巫妖",
+        "Rubick": "大魔导师",
         "TiderHunter": "潮汐猎人",
         "Enigma": "谜团",
         "Techies": "地精工程师",
@@ -5454,6 +5597,7 @@
         Undead: {conditions: {"2": "使所有敌军护甲 -4", "4": "使所有敌军护甲 -6",}, "is_species": true,},
         Warlock: {conditions: {"3": "使所有友军获得：造成的所有伤害15%吸血", "6": "使所有友军获得：造成的所有伤害25%吸血",}, "is_species": false,},
         Warrior: {conditions: {"3": "所有友方战士的护甲+5", "6": "所有友方战士的护甲+7", "9": "所有友方战士的护甲+9",}, "is_species": false,},
+        Wizard: {conditions: {"2": "使需要4个及以上棋子的种族/职业触发所需要的棋子数-1",}, "is_species": false,},
     };
     var hero_classes = {
         Axe: ['Orc', 'Warrior',],
@@ -5484,6 +5628,7 @@
         Morphling: ['Element', 'Assassin',],
         Mirana: ['Elf', 'Hunter',],
         Lich: ['Undead', 'Mage',],
+        Rubick:['God','Wizard',],
         Lycan: ['Human', 'Beast', 'Warrior',],
         Venomancer: ['Beast', 'Warlock',],
         Omniknight: ['Human', 'Knight',],
@@ -5509,6 +5654,7 @@
         Medusa: ['Naga', 'Hunter',],
         DragonKnight: ['Human', 'Dragon', 'Knight',],
         LoneDruid: ['Beast', 'Druid',],
+        Grimstroke: ['Demon', 'Wizard',],
         Gyrocopter: ['Dwarf', 'Mech',],
         TiderHunter: ['Naga', 'Hunter',],
         Enigma: ['Element', 'Warlock',],
@@ -5548,6 +5694,7 @@
         'Morphling': 2,
         'Mirana': 2,
         'Lich': 2,
+        'Rubick':2,
         'Lycan': 3,
         'Venomancer': 3,
         'Omniknight': 3,
@@ -5573,6 +5720,7 @@
         'Medusa': 4,
         'DragonKnight': 4,
         'LoneDruid': 4,
+        'Grimstroke':4,
         'Gyrocopter': 5,
         'TiderHunter': 5,
         'Enigma': 5,

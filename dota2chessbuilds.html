@@ -3,6 +3,7 @@
     <link rel="dns-prefetch" href="https://www.ackurdeeve.com">
     <link rel="stylesheet" href="css/bower.css" type="text/css">
     <link rel="stylesheet" href="css/index.css" type="text/css">
+    <link rel="stylesheet" href="css/icon-update.css" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Lora|Karla|Iceland" rel="stylesheet">
     <link rel="icon" href="img/omega.png">
     <meta http-equiv="content-type" content="text/html" charset="UTF-8">
@@ -369,6 +370,11 @@
                         <span></span>
                         <div class="icon-c-warrior"></div>
                     </div>
+                    <div class="add-build__class" data-build-class="Wizard" title="巫师
+（2）巫师：使需要4个及以上棋子的种族/职业触发所需要的棋子数-1">
+                        <span></span>
+                        <div class="icon-c-wizard"></div>
+                    </div>
                     <span data-build-results="0"></span>
                 </div>
                 <div class="add-build__heroes">
@@ -568,6 +574,13 @@
                             巫妖
                         </div>
                     </div>
+                     <div class="add-build__hero" data-level="2" data-hero-search="Rubick" title="大魔导师">
+                        <span></span>
+                        <div class="add-build__hero-inner color-uncommon" data-build-hero-inner="Rubick">
+                            <div class="icon-rubick"></div>
+                            大魔导师
+                        </div>
+                    </div>
                     <div class="add-build__hero" data-level="3" data-hero-search="Lycan" title="狼人">
                         <span></span>
                         <div class="add-build__hero-inner color-rare" data-build-hero-inner="Lycan">
@@ -742,6 +755,13 @@
                         <div class="add-build__hero-inner color-legendary" data-build-hero-inner="LoneDruid">
                             <div class="icon-lonedruid"></div>
                             利爪德鲁伊
+                        </div>
+                    </div>
+                    <div class="add-build__hero" data-level="4" data-hero-search="Grimstroke" title="天涯墨客">
+                        <span></span>
+                        <div class="add-build__hero-inner color-legendary" data-build-hero-inner="Grimstroke">
+                            <div class="icon-grimstroke"></div>
+                            天涯墨客
                         </div>
                     </div>
                     <div class="add-build__hero" data-level="5" data-hero-search="Gyrocopter" title="矮人直升机">
@@ -955,6 +975,7 @@
         "LoneDruid": "利爪德鲁伊",
         "Gyrocopter": "矮人直升机",
         "Lich": "巫妖",
+        "Rubick": "大魔导师",
         "TiderHunter": "潮汐猎人",
         "Enigma": "谜团",
         "Techies": "地精工程师",
@@ -1028,6 +1049,7 @@
         Undead: {conditions: {"2": "使所有敌军护甲 -4", "4": "使所有敌军护甲 -6",}, "is_species": true,},
         Warlock: {conditions: {"3": "使所有友军获得：造成的所有伤害15%吸血", "6": "使所有友军获得：造成的所有伤害25%吸血",}, "is_species": false,},
         Warrior: {conditions: {"3": "所有友方战士的护甲+5", "6": "所有友方战士的护甲+7", "9": "所有友方战士的护甲+9",}, "is_species": false,},
+        Wizard: {conditions: {"2": "使需要4个及以上棋子的种族/职业触发所需要的棋子数-1",}, "is_species": false,},
     };
     var hero_classes = {
         Axe: ['Orc', 'Warrior',],
@@ -1058,6 +1080,7 @@
         Morphling: ['Element', 'Assassin',],
         Mirana: ['Elf', 'Hunter',],
         Lich: ['Undead', 'Mage',],
+        Rubick:['God','Wizard',],
         Lycan: ['Human', 'Beast', 'Warrior',],
         Venomancer: ['Beast', 'Warlock',],
         Omniknight: ['Human', 'Knight',],
@@ -1083,6 +1106,7 @@
         Medusa: ['Naga', 'Hunter',],
         DragonKnight: ['Human', 'Dragon', 'Knight',],
         LoneDruid: ['Beast', 'Druid',],
+        Grimstroke: ['Demon', 'Wizard',],
         Gyrocopter: ['Dwarf', 'Mech',],
         TiderHunter: ['Naga', 'Hunter',],
         Enigma: ['Element', 'Warlock',],
@@ -1122,6 +1146,7 @@
         'Morphling': 2,
         'Mirana': 2,
         'Lich': 2,
+        'Rubick':2,
         'Lycan': 3,
         'Venomancer': 3,
         'Omniknight': 3,
@@ -1147,6 +1172,7 @@
         'Medusa': 4,
         'DragonKnight': 4,
         'LoneDruid': 4,
+        'Grimstroke':4,
         'Gyrocopter': 5,
         'TiderHunter': 5,
         'Enigma': 5,
@@ -1162,7 +1188,6 @@
     var pool_size = {'1': 45, '2': 30, '3': 25, '4': 15, '5': 10,};
     var logged = true;
     var socketUrl = 'wss://dota2chess.com';
-
 </script>
 <script type="text/javascript" src="js/variables.js"></script>
 <script type="text/javascript" src="js/init.js"></script>

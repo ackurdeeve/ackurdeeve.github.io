@@ -1,0 +1,26 @@
+.icon-a-grimstroke {
+    width: 30px; height: 30px;
+    background: url('../images/icon-update.png') -35px -53px;
+}
+
+
+.icon-a-rubick {
+    width: 30px; height: 30px;
+    background: url('../images/icon-update.png') -87px -1px;
+}
+
+
+.icon-c-wizard {
+    width: 50px; height: 50px;
+    background: url('../images/icon-update.png') -1px -1px;
+}
+
+.icon-grimstroke {
+    width: 32px; height: 32px;
+    background: url('../images/icon-update.png') -53px -1px;
+}
+
+.icon-rubick {
+    width: 32px; height: 32px;
+    background: url('../images/icon-update.png') -1px -53px;
+}
