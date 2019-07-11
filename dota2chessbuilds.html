@@ -219,7 +219,7 @@
         <br>
         <div class="content content--wide">
             <div class="add-build" data-build="">
-                <div class="add-build__classes">
+                <div class="add-build__classes add-build__classes--heroes">
                     <div class="add-build__class add-build__class--mode" data-build-class-mode="include" title="Include">
                         <span></span>
                         <i class="ion-plus"></i>
@@ -232,7 +232,8 @@
                     </div>
                     <div class="add-build__class" data-build-class="Beast" title="野兽
 (2) 野兽: 所有友军攻击力 +10%
-(4) 野兽: 所有友军攻击力 +20%">
+(4) 野兽: 所有友军攻击力 +20%
+(6) 野兽: 所有友军攻击力 +30%">
                         <span></span>
                         <div class="icon-c-beast"></div>
                     </div>
@@ -283,8 +284,9 @@
                         <div class="icon-c-goblin"></div>
                     </div>
                     <div class="add-build__class" data-build-class="God" title="神
- (1)所有友军获得效果：技能冷却时间 -50%.
- (2)所有友军获得效果：技能冷却时间 -50%.">
+ (1)所有友军获得效果：技能冷却时间 -30%.
+ (2)所有友军获得效果：技能冷却时间 -40%.
+ (3)所有友军获得效果：技能冷却时间 -50%.">
                         <span></span>
                         <div class="icon-c-god"></div>
                     </div>
@@ -296,8 +298,8 @@
                         <div class="icon-c-human"></div>
                     </div>
                     <div class="add-build__class" data-build-class="Hunter" title="猎人
-(3) 猎人：所有友方猎人+30基础攻击力，且攻击有+30%概率必中
-(6) 猎人：所有友方猎人+40基础攻击力，且攻击有+40%概率必中">
+(3) 猎人：所有友方猎人+30基础攻击力，且攻击有+45%概率必中
+(6) 猎人：所有友方猎人+50基础攻击力，且攻击有+75%概率必中">
                         <span></span>
                         <div class="icon-c-hunter"></div>
                     </div>
@@ -308,14 +310,16 @@
                         <div class="icon-c-knight"></div>
                     </div>
                     <div class="add-build__class" data-build-class="Mage" title="法师
-(3) 法师: 使所有敌军的魔法抗性 -40
-(6) 法师: 使所有敌军的魔法抗性 -40">
+(3) 法师: 使所有敌军的魔法抗性 -35
+(6) 法师: 使所有敌军的魔法抗性 -35
+(9) 法师: 使所有敌军的魔法抗性 -35">
                         <span></span>
                         <div class="icon-c-mage"></div>
                     </div>
                     <div class="add-build__class" data-build-class="Mech" title="工匠
 (2) 工匠: 所有友方工匠的生命回复速度 +15
-(4) 工匠: 所有友方工匠的生命回复速度 +25">
+(4) 工匠: 所有友方工匠的生命回复速度 +25
+(6) 工匠: 所有友方工匠的生命回复速度 +35">
                         <span></span>
                         <div class="icon-c-mech"></div>
                     </div>
@@ -347,19 +351,21 @@
                     </div>
                     <div class="add-build__class" data-build-class="Troll" title="巨魔
 (2) 巨魔: 所有友方巨魔的攻击速度 +35 
-(4) 巨魔: 所有友方的攻击速度 +35">
+(4) 巨魔: 所有友方的攻击速度 +30">
                         <span></span>
                         <div class="icon-c-troll"></div>
                     </div>
                     <div class="add-build__class" data-build-class="Undead" title="亡灵
 (2) 亡灵: 使所有敌军护甲 -4 
-(4) 亡灵: 使所有敌军护甲 -6">
+(4) 亡灵: 使所有敌军护甲 -6
+(6) 亡灵: 使所有敌军护甲 -8">
                         <span></span>
                         <div class="icon-c-undead"></div>
                     </div>
                     <div class="add-build__class" data-build-class="Warlock" title="术士
-(3) 术士：使所有友军获得：造成的所有伤害15%吸血
-(3) 术士：使所有友军获得：造成的所有伤害25%吸血">
+(2) 术士：使所有友军获得：造成的所有伤害10%吸血
+(4) 术士：使所有友军获得：造成的所有伤害20%吸血
+(6) 术士：使所有友军获得：造成的所有伤害30%吸血">
                         <span></span>
                         <div class="icon-c-warlock"></div>
                     </div>
@@ -1004,7 +1010,7 @@
             conditions: {"3": "所有友方刺客的攻击有 15% 概率造成 350% 伤害", "6": "所有友方刺客的攻击有 15% 概率造成 450% 伤害",},
             "is_species": false,
         },
-        Beast: {conditions: {"2": "所有友军攻击力 +10%", "4": "所有友军攻击力 +20%",}, "is_species": true,},
+        Beast: {conditions: {"2": "所有友军攻击力 +10%", "4": "所有友军攻击力 +20%","6": "所有友军攻击力 +30%",}, "is_species": true,},
         Demon: {conditions: {"1": "攻击力 +50% 纯粹伤害",}, "is_species": true,},
         DemonHunter: {conditions: {"1": "此棋子视为敌方的一个恶魔", "2": "所有友方恶魔视为同一种族",}, "is_species": false,},
         Dragon: {conditions: {"3": "所有友方龙的初始魔法值为100",}, "is_species": true,},
@@ -1019,13 +1025,13 @@
         },
         Elf: {
             conditions: {
-                "3": "Evasion increased by 20% for all elves.",
-                "6": "所有友方精灵有 25% 几率闪避敌人的攻击",
-                "9": "Evasion increased by 30% for all elves.",
+                "3": "所有友方精灵有 20% 几率闪避敌人的攻击.",
+                "6": "所有友方精灵有 25% 几率闪避敌人的攻击.",
+                "9": "所有友方精灵有 30% 几率闪避敌人的攻击.",
             }, "is_species": true,
         },
         Goblin: {conditions: {"3": "使一个随机友军的护甲 +15 生命回复 +10", "6": "所有友军的护甲 +15 生命回复 +10",}, "is_species": true,},
-        God: {conditions: {"1": "所有友军获得效果：技能冷却时间 -50%.", "2": "所有友军获得效果：技能冷却时间 -50%.",}, "is_species": true,},
+        God: {conditions: {"1": "所有友军获得效果：技能冷却时间 -30%.", "2": "所有友军获得效果：技能冷却时间 -40%.","3": "所有友军获得效果：技能冷却时间 -50%.",}, "is_species": true,},
         Human: {
             conditions: {
                 "2": "所有友方人类攻击敌人有 20% 的概率使敌人沉默4秒",
@@ -1034,20 +1040,20 @@
             }, "is_species": true,
         },
         Hunter: {
-            conditions: {"3": "所有友方猎人+30基础攻击力，且攻击有+30%概率必中", "6": "所有友方猎人+40基础攻击力，且攻击有+40%概率必中",},
+            conditions: {"3": "所有友方猎人+30基础攻击力，且攻击有+45%概率必中", "6": "所有友方猎人+50基础攻击力，且攻击有+75%概率必中",},
             "is_species": true,
         },
-        Knight: {conditions: {"3": "所有友方骑士有 40% 时间被减伤护盾庇护", "6": "所有友方骑士有 35% 时间被减伤护盾庇护",}, "is_species": false,},
-        Mage: {conditions: {"3": "使所有敌军的魔法抗性 -35", "6": "使所有敌军的魔法抗性 -45",}, "is_species": false,},
-        Mech: {conditions: {"2": "所有友方工匠的生命回复速度 +15", "4": "所有友方工匠的生命回复速度 +25",}, "is_species": false,},
-        Naga: {conditions: {"2": "所有友方棋子魔法抗性提升35",}, "is_species": true,},
+        Knight: {conditions: {"3": "所有友方骑士有 40% 时间被减伤护盾庇护", "6": "所有友方骑士有 40% 时间被减伤护盾庇护",}, "is_species": false,},
+        Mage: {conditions: {"3": "使所有敌军的魔法抗性 -35", "6": "使所有敌军的魔法抗性 -35", "9": "使所有敌军的魔法抗性 -35",}, "is_species": false,},
+        Mech: {conditions: {"2": "所有友方工匠的生命回复速度 +15", "4": "所有友方工匠的生命回复速度 +25","6": "所有友方工匠的生命回复速度 +35",}, "is_species": false,},
+        Naga: {conditions: {"2": "所有友方棋子魔法抗性提升35","4": "所有友方棋子魔法抗性提升45"}, "is_species": true,},
         Ogre: {conditions: {"1": "所有友方棋子最大生命值提高5%",}, "is_species": true,},
         Orc: {conditions: {"2": "所有友方兽人的最大生命值 +250", "4": "所有友方兽人的最大生命值 +350 ",}, "is_species": true,},
         Priest: {conditions: {"1": "给你的信使施加一个护盾，可以抵挡受到的20%伤害",}, "is_species": false,},
         Shaman: {conditions: {"2": "战斗开始时将一个随机地方棋子便形成青蛙，持续6秒",}, "is_species": false,},
-        Troll: {conditions: {"2": "所有友方巨魔的攻击速度 +35", "4": "所有友方的攻击速度 +35",}, "is_species": true,},
-        Undead: {conditions: {"2": "使所有敌军护甲 -4", "4": "使所有敌军护甲 -6",}, "is_species": true,},
-        Warlock: {conditions: {"3": "使所有友军获得：造成的所有伤害15%吸血", "6": "使所有友军获得：造成的所有伤害25%吸血",}, "is_species": false,},
+        Troll: {conditions: {"2": "所有友方巨魔的攻击速度 +35", "4": "所有友方的攻击速度 +30",}, "is_species": true,},
+        Undead: {conditions: {"2": "使所有敌军护甲 -4", "4": "使所有敌军护甲 -6", "6": "使所有敌军护甲 -8",}, "is_species": true,},
+        Warlock: {conditions: {"2": "使所有友军获得：造成的所有伤害10%吸血","4": "使所有友军获得：造成的所有伤害20%吸血", "6": "使所有友军获得：造成的所有伤害30%吸血",}, "is_species": false,},
         Warrior: {conditions: {"3": "所有友方战士的护甲+5", "6": "所有友方战士的护甲+7", "9": "所有友方战士的护甲+9",}, "is_species": false,},
         Wizard: {conditions: {"2": "使需要4个及以上棋子的种族/职业触发所需要的棋子数-1",}, "is_species": false,},
     };
