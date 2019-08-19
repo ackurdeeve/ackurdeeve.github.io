@@ -1,26 +1,63 @@
+.icon-visage {
+    width: 32px; height: 32px;
+    background: url('../images/icon-update.png') -50px -0;
+}
+
+.icon-a-lion {
+    width: 30px; height: 30px;
+    background: url('../images/icon-update.png') -0 -82px;
+}
+
+
 .icon-a-grimstroke {
     width: 30px; height: 30px;
-    background: url('../images/icon-update.png') -35px -53px;
+    background: url('../images/icon-update.png') -30px -82px;
+}
+
+
+.icon-a-pudge {
+    width: 30px; height: 30px;
+    background: url('../images/icon-update.png') -60px -82px;
 }
 
 
 .icon-a-rubick {
     width: 30px; height: 30px;
-    background: url('../images/icon-update.png') -87px -1px;
+    background: url('../images/icon-update.png') -114px -0;
+}
+
+
+.icon-a-visage {
+    width: 30px; height: 30px;
+    background: url('../images/icon-update.png') -114px -30px;
 }
 
 
 .icon-c-wizard {
     width: 50px; height: 50px;
-    background: url('../images/icon-update.png') -1px -1px;
+    background: url('../images/icon-update.png') -0 -0;
 }
+
 
 .icon-grimstroke {
     width: 32px; height: 32px;
-    background: url('../images/icon-update.png') -53px -1px;
+    background: url('../images/icon-update.png') -0 -50px;
 }
+
+
+.icon-lion {
+    width: 32px; height: 32px;
+    background: url('../images/icon-update.png') -32px -50px;
+}
+
+
+.icon-pudge {
+    width: 32px; height: 32px;
+    background: url('../images/icon-update.png') -82px -0;
+}
+
 
 .icon-rubick {
     width: 32px; height: 32px;
-    background: url('../images/icon-update.png') -1px -53px;
+    background: url('../images/icon-update.png') -82px -32px;
 }
