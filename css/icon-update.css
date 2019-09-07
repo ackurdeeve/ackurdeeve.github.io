@@ -1,63 +1,79 @@
 .icon-visage {
     width: 32px; height: 32px;
-    background: url('../images/icon-update.png') -50px -0;
+    background: url('../images/icon-update.png') -0 -50px;
+}
+
+.icon-a-grimstroke {
+    width: 30px; height: 30px;
+    background: url('../images/icon-update.png') -64px -82px;
 }
 
 .icon-a-lion {
     width: 30px; height: 30px;
-    background: url('../images/icon-update.png') -0 -82px;
+    background: url('../images/icon-update.png') -94px -82px;
 }
 
-
-.icon-a-grimstroke {
+.icon-a-nyxassassin {
     width: 30px; height: 30px;
-    background: url('../images/icon-update.png') -30px -82px;
+    background: url('../images/icon-update.png') -132px -0;
 }
 
+.icon-a-oracle {
+    width: 30px; height: 30px;
+    background: url('../images/icon-update.png') -132px -30px;
+}
 
 .icon-a-pudge {
     width: 30px; height: 30px;
-    background: url('../images/icon-update.png') -60px -82px;
+    background: url('../images/icon-update.png') -132px -60px;
 }
-
 
 .icon-a-rubick {
     width: 30px; height: 30px;
-    background: url('../images/icon-update.png') -114px -0;
+    background: url('../images/icon-update.png') -0 -114px;
 }
-
 
 .icon-a-visage {
     width: 30px; height: 30px;
-    background: url('../images/icon-update.png') -114px -30px;
+    background: url('../images/icon-update.png') -30px -114px;
 }
 
-
-.icon-c-wizard {
+.icon-c-bug {
     width: 50px; height: 50px;
     background: url('../images/icon-update.png') -0 -0;
 }
 
-
-.icon-grimstroke {
-    width: 32px; height: 32px;
-    background: url('../images/icon-update.png') -0 -50px;
+.icon-c-wizard {
+    width: 50px; height: 50px;
+    background: url('../images/icon-update.png') -50px -0;
 }
 
-
-.icon-lion {
+.icon-grimstroke {
     width: 32px; height: 32px;
     background: url('../images/icon-update.png') -32px -50px;
 }
 
+.icon-lion {
+    width: 32px; height: 32px;
+    background: url('../images/icon-update.png') -64px -50px;
+}
+
+.icon-nyxassassin {
+    width: 32px; height: 32px;
+    background: url('../images/icon-update.png') -100px -0;
+}
+
+.icon-oracle {
+    width: 32px; height: 32px;
+    background: url('../images/icon-update.png') -100px -32px;
+}
 
 .icon-pudge {
     width: 32px; height: 32px;
-    background: url('../images/icon-update.png') -82px -0;
+    background: url('../images/icon-update.png') -0 -82px;
 }
-
 
 .icon-rubick {
     width: 32px; height: 32px;
-    background: url('../images/icon-update.png') -82px -32px;
+    background: url('../images/icon-update.png') -32px -82px;
 }

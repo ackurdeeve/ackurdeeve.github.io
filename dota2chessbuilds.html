@@ -381,6 +381,11 @@
                         <span></span>
                         <div class="icon-c-wizard"></div>
                     </div>
+                    <div class="add-build__class" data-build-class="Bug" title="虫
+（2）虫：使所有非虫族友方棋子获得效果：该棋子死亡时，如果场上存在与它同名的友方棋子，召唤一只等级相当于（同名棋子中最高等级）的随机虫族棋子。">
+                        <span></span>
+                        <div class="icon-c-bug"></div>
+                    </div>
                     <span data-build-results="0"></span>
                 </div>
                 <div class="add-build__heroes">
@@ -517,13 +522,13 @@
                             伐木机
                         </div>
                     </div>
-                    <div class="add-build__hero" data-level="2" data-hero-search="PainQueen" title="痛苦女王">
-                        <span></span>
-                        <div class="add-build__hero-inner color-uncommon" data-build-hero-inner="PainQueen">
-                            <div class="icon-painqueen"></div>
-                            痛苦女王
-                        </div>
-                    </div>
+<!--                    <div class="add-build__hero" data-level="2" data-hero-search="PainQueen" title="痛苦女王">-->
+<!--                        <span></span>-->
+<!--                        <div class="add-build__hero-inner color-uncommon" data-build-hero-inner="PainQueen">-->
+<!--                            <div class="icon-painqueen"></div>-->
+<!--                            痛苦女王-->
+<!--                        </div>-->
+<!--                    </div>-->
                     <div class="add-build__hero" data-level="2" data-hero-search="Puck" title="精灵龙">
                         <span></span>
                         <div class="add-build__hero-inner color-uncommon" data-build-hero-inner="Puck">
@@ -531,13 +536,13 @@
                             精灵龙
                         </div>
                     </div>
-                    <div class="add-build__hero" data-level="2" data-hero-search="Slardar" title="鱼人守卫">
-                        <span></span>
-                        <div class="add-build__hero-inner color-uncommon" data-build-hero-inner="Slardar">
-                            <div class="icon-slardar"></div>
-                            鱼人守卫
-                        </div>
-                    </div>
+<!--                    <div class="add-build__hero" data-level="2" data-hero-search="Slardar" title="鱼人守卫">-->
+<!--                        <span></span>-->
+<!--                        <div class="add-build__hero-inner color-uncommon" data-build-hero-inner="Slardar">-->
+<!--                            <div class="icon-slardar"></div>-->
+<!--                            鱼人守卫-->
+<!--                        </div>-->
+<!--                    </div>-->
                     <div class="add-build__hero" data-level="2" data-hero-search="ChaosKnight" title="混沌骑士">
                         <span></span>
                         <div class="add-build__hero-inner color-uncommon" data-build-hero-inner="ChaosKnight">
@@ -599,6 +604,20 @@
                         <div class="add-build__hero-inner color-uncommon" data-build-hero-inner="BatRider">
                             <div class="icon-batrider"></div>
                             蝙蝠骑士
+                        </div>
+                    </div>
+                    <div class="add-build__hero" data-level="2" data-hero-search="Oracle" title="神谕者">
+                        <span></span>
+                        <div class="add-build__hero-inner color-uncommon" data-build-hero-inner="Oracle">
+                            <div class="icon-oracle"></div>
+                            神谕者
+                        </div>
+                    </div>
+                    <div class="add-build__hero" data-level="2" data-hero-search="NyxAssassin" title="司夜刺客">
+                        <span></span>
+                        <div class="add-build__hero-inner color-uncommon" data-build-hero-inner="NyxAssassin">
+                            <div class="icon-nyxassassin"></div>
+                            司夜刺客
                         </div>
                     </div>
                     <div class="add-build__hero" data-level="3" data-hero-search="Lycan" title="狼人">
@@ -704,6 +723,13 @@
                         <div class="add-build__hero-inner color-rare" data-build-hero-inner="Pudge">
                             <div class="icon-pudge"></div>
                             屠夫
+                        </div>
+                    </div>
+                    <div class="add-build__hero" data-level="3" data-hero-search="SandKing" title="沙王">
+                        <span></span>
+                        <div class="add-build__hero-inner color-rare" data-build-hero-inner="SandKing">
+                            <div class="icon-sandking"></div>
+                            沙王
                         </div>
                     </div>
 
@@ -1035,13 +1061,48 @@
         "Pudge":"屠夫",
         "Visage":"死灵飞龙",
         "Slark":"鱼人夜行者",
+        "Oracle":"神谕者",
+        "NyxAssassin":"司夜刺客",
+    };
+    var class_to_zh = {
+        "Assassin": "刺客",
+        "Beast": "野兽",
+        "Demon": "恶魔",
+        "DemonHunter": "恶魔猎人",
+        "Dragon": "龙",
+        "Druid": "德鲁伊",
+        "Dwarf": "矮人",
+        "Element": "元素",
+        "Elf": "精灵",
+        "Goblin": "地精",
+        "God": "神",
+        "Human": "人类",
+        "Hunter": "猎人",
+        "Knight": "骑士",
+        "Mage": "法师",
+        "Mech": "工匠",
+        "Naga": "娜迦",
+        "Ogre": "食人魔",
+        "Orc": "兽人",
+        "Priest": "牧师",
+        "Shaman": "萨满",
+        "Troll": "巨魔",
+        "Undead": "亡灵",
+        "Warlock": "术士",
+        "Warrior": "战士",
+        "Wizard": "巫师",
+        "Bug":"虫",
     };
     var classes = {
         Assassin: {
             conditions: {"3": "所有友方刺客的攻击有 15% 概率造成 300% 伤害", "6": "所有友方刺客的攻击有 15% 概率造成 450% 伤害",},
             "is_species": false,
         },
-        Beast: {conditions: {"2": "所有友军攻击力 +10%", "4": "所有友军攻击力 +20%","6": "所有友军攻击力 +30%",}, "is_species": true,},
+        Beast: {
+            conditions: {
+                "2": "所有友军的攻击力+15%，可以被召唤物继承。",
+                "4": "所有友军的攻击力+25%，可以被召唤物继承。",
+            }, "is_species": true,},
         Demon: {conditions: {"1": "攻击力 +50% 纯粹伤害",}, "is_species": true,},
         DemonHunter: {conditions: {"1": "此棋子视为敌方的一个恶魔", "2": "所有友方恶魔视为同一种族",}, "is_species": false,},
         Dragon: {conditions: {"3": "所有友方龙的初始魔法值为100","5": "如果非龙族的友军都是相同的星级，所有友军的初始魔法值为100",}, "is_species": true,},
@@ -1057,12 +1118,16 @@
         Elf: {
             conditions: {
                 "3": "所有友方精灵有 20% 几率闪避敌人的攻击.",
-                "6": "全体友军有 20% 几率闪避敌人的攻击.",
-                "9": "全体友军精灵有 25% 几率闪避敌人的攻击.",
+                "6": "全体友军有 15% 几率闪避敌人的攻击.",
+                "9": "全体友军精灵有 45% 几率闪避敌人的攻击.",
             }, "is_species": true,
         },
         Goblin: {conditions: {"3": "使一个随机友军的护甲 +15 生命回复 +10", "6": "全体友方地精 +15 生命回复 +10",}, "is_species": true,},
-        God: {conditions: {"1": "所有友军获得效果：技能冷却时间 -40%.", "2": "所有友军获得效果：技能冷却时间 -40%.","3": "所有友军获得效果：技能冷却时间 -40%.",}, "is_species": true,},
+        God: {
+            conditions: {
+                "2": "所有神族棋子和未触发种族技能的友方棋子获得效果：技能冷却时间减半。",
+                "4": "所有神族棋子和未触发种族技能的友方棋子获得效果：技能冷却时间减半。",
+            }, "is_species": true,},
         Human: {
             conditions: {
                 "2": "所有友方人类攻击敌人有 20% 的概率使敌人沉默3秒",
@@ -1074,19 +1139,40 @@
             conditions: {"3": "所有友方猎人+30基础攻击力，且攻击有+45%概率必中", "6": "所有友方猎人+40基础攻击力，且攻击有+60%概率必中",},
             "is_species": true,
         },
-        Knight: {conditions: {"2": "所有友方骑士有30%时间被减伤+40%的护盾庇护。","4": "所有友方骑士有40%时间被减伤+40%护盾庇护。", "6": "所有友军有+50%时间被减伤+40%护盾庇护。",}, "is_species": false,},
+        Knight: {
+            conditions: {
+                "2": "所有友方骑士有35%时间被减伤护盾庇护。",
+                "4": "所有友方骑士有25%时间被减伤护盾庇护。",
+                "6": "所有友军有25%时间被减伤护盾庇护。",
+            }, "is_species": false,},
         Mage: {conditions: {"3": "使所有敌军的魔法抗性 -35", "6": "使所有敌军的魔法抗性 -30",}, "is_species": false,},
         Mech: {conditions: {"2": "所有友方工匠的生命回复速度 +15", "4": "所有友方工匠的生命回复速度 +25","6": "所有友方工匠的生命回复速度 +35",}, "is_species": false,},
         Naga: {conditions: {"2": "所有友方棋子魔法抗性提升30","4": "所有友方棋子魔法抗性提升45"}, "is_species": true,},
         Ogre: {conditions: {"1": "所有友方棋子最大生命值提高5%",}, "is_species": true,},
         Orc: {conditions: {"2": "所有友方兽人的最大生命值 +250", "4": "全体友军最大生命值 +250 ",}, "is_species": true,},
-        Priest: {conditions: {"1": "给你的信使施加一个护盾，可以抵挡受到的20%伤害",}, "is_species": false,},
+        Priest: {conditions: {"1": "给你的信使施加一个护盾，可以抵挡受到的20%伤害","2":"如果信使战斗失败受到至少8点伤害，会获得一个随机的贡品",}, "is_species": false,},
         Shaman: {conditions: {"2": "战斗开始时将一个随机地方棋子便形成青蛙，持续6秒",}, "is_species": false,},
         Troll: {conditions: {"2": "所有友方巨魔的攻击速度 +35", "4": "所有友方的攻击速度 +30","6": "所有友军获得热血战魂效果，战魂等级等同于友军中星级最高的巨魔战将",}, "is_species": true,},
-        Undead: {conditions: {"2": "使所有敌军护甲 -3", "4": "使所有敌军护甲 -5", "6": "使所有敌军护甲 -7",}, "is_species": true,},
-        Warlock: {conditions: {"2": "使所有友军获得：造成的所有伤害10%吸血","4": "使所有友军获得：造成的所有伤害20%吸血", "6": "使所有友军获得：造成的所有伤害30%吸血",}, "is_species": false,},
-        Warrior: {conditions: {"3": "所有友方战士的护甲+5", "6": "所有友方战士的护甲+7", "9": "所有友方战士的护甲+9",}, "is_species": false,},
+        Undead: {
+            conditions: {
+                "2": "使所有敌军护甲 -4",
+                "4": "使所有敌军护甲 -4",
+                "6": "使所有敌军护甲 -6",
+            }, "is_species": true,},
+        Warlock: {
+            conditions: {
+                "2": "使所有友军获得：造成的所有伤害15%吸血",
+                "4": "使所有友军获得：造成的所有伤害15%吸血",
+                "6": "使所有友军获得：造成的所有伤害30%吸血",
+            }, "is_species": false,},
+        Warrior: {
+            conditions: {
+                "3": "所有友方战士的护甲+7",
+                "6": "所有友方战士的护甲+5",
+                "9": "所有友方战士的护甲+11",
+            }, "is_species": false,},
         Wizard: {conditions: {"2": "使需要4个及以上棋子的种族/职业触发所需要的棋子数-1",}, "is_species": false,},
+        Bug: {conditions: {"2": "使所有非虫族友方棋子获得效果：该棋子死亡时，如果场上存在与它同名的友方棋子，召唤一只等级相当于（同名棋子中最高等级）的随机虫族棋子。",}, "is_species": true,},
     };
     var hero_classes = {
         Axe: ['Orc', 'Warrior',],
@@ -1119,7 +1205,7 @@
         Lich: ['Undead', 'Mage',],
         Rubick:['God','Wizard',],
         Lycan: ['Human', 'Beast', 'Warrior',],
-        Venomancer: ['Beast', 'Warlock',],
+        Venomancer: ['Beast', 'Bug',],
         Omniknight: ['Human', 'Knight',],
         Razor: ['Element', 'Mage',],
         WindRanger: ['Elf', 'Hunter',],
@@ -1152,10 +1238,13 @@
         Zeus: ['God', 'Mage',],
         Io: ['Elf',],
         Sven: ['Demon', 'Warrior',],
-        Lion:['Demon','Wizard'],
-        Slark:['Naga','Assassin'],
-        Pudge:['Undead','Warrior'],
-        Visage:['Undead','Hunter','Dragon'],
+        Lion:['Demon','Wizard',],
+        Slark:['Naga','Assassin',],
+        Pudge:['Undead','Warrior',],
+        Visage:['Undead','Hunter','Dragon',],
+        Oracle: ['God','Priest',],
+        NyxAssassin:['Bug','Assassin',],
+        SandKing:['Bug','Beast',]
     };
 
     var hero_costs = {
@@ -1188,6 +1277,9 @@
         'Mirana': 2,
         'Lich': 2,
         'Rubick':2,
+        'Oracle': 2,
+        'NyxAssassin':2,
+        'SandKing':3,
         'Lycan': 3,
         'Venomancer': 3,
         'Omniknight': 3,
@@ -1227,9 +1319,7 @@
         'Pudge':3,
         'Visage':5,
     };
-
     var colors = ['', 'common', 'uncommon', 'rare', 'legendary', 'immortal',];
-
     var pool_size = {'1': 45, '2': 30, '3': 25, '4': 15, '5': 10,};
     var logged = true;
     var socketUrl = 'wss://dota2chess.com';
