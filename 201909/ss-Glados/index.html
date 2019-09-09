@@ -23,17 +23,16 @@
 
 <!--SEO-->
 
-    <meta name="keywords" content="EVEOnline,ESI,Excel,Games">
+    <meta name="keywords" content="VPN,SS,机场">
 
-    <meta name="description" content="养猪表格Excel版Skill Points Farm Calculator For EVEOnline
-这个表格比较简单，数据来源于Marketer Data，实时更新养猪利润。请使用Exce...">
+    <meta name="description" content="GLaDOS 通用网络游戏加速器现在扶墙的难度越来越大，SS流量基本已经被精准识别，6月份就封停了不少扶墙服务器。由此看来自建VPS已经不是最佳的选择，第一是白嫖的门槛越来越高，第二是线路好的V...">
 
     <meta name="robots" content="all">
     <meta name="google" content="all">
     <meta name="googlebot" content="all">
     <meta name="verify" content="all">
 </head><body>
-    <title>养猪表格Excel版 | 畅游星海 | Steam | Dota2 | EVEOnline |</title>
+    <title>扶墙机场推荐-GLaDOS 通用网络游戏加速器 | 畅游星海 | Steam | Dota2 | EVEOnline |</title>
 
     <link rel="alternate" href="https://feed43.com/ackurdeeve.xml" title="畅游星海 | Steam | Dota2 | EVEOnline |" type="application/atom+xml">
 
@@ -171,9 +170,9 @@
                 <p id="process"></p>
 <article class="post">
     <div class="post-head">
-        <h1 id="养猪表格Excel版">
+        <h1 id="扶墙机场推荐-GLaDOS 通用网络游戏加速器">
             
-	            养猪表格Excel版
+	            扶墙机场推荐-GLaDOS 通用网络游戏加速器
             
         </h1>
         <div class="post-meta">
@@ -189,7 +188,7 @@
         <i class="fa fa-tags"></i>
         <span class="tags-meta">
             
-            <a class="tag-link" href="/tags/ESI/">ESI</a> <a class="tag-link" href="/tags/EVEOnline/">EVEOnline</a> <a class="tag-link" href="/tags/Excel/">Excel</a> <a class="tag-link" href="/tags/Games/">Games</a>
+            <a class="tag-link" href="/tags/SS/">SS</a> <a class="tag-link" href="/tags/VPN/">VPN</a> <a class="tag-link" href="/tags/机场/">机场</a>
             
         </span>
     </span>
@@ -198,7 +197,7 @@
     
     <span class="fa-wrap">
         <i class="fa fa-clock-o"></i>
-        <span class="date-meta">2019/02/09</span>
+        <span class="date-meta">2019/09/09</span>
     </span>
     
     <span class="fa-wrap">
@@ -213,23 +212,27 @@
     </div>
     
     <div class="post-body post-content">
-        <h2 id="养猪表格Excel版"><a href="#养猪表格Excel版" class="headerlink" title="养猪表格Excel版"></a>养猪表格Excel版</h2><p><strong>Skill Points Farm Calculator For EVEOnline</strong></p>
-<p>这个表格比较简单，数据来源于Marketer Data，实时更新养猪利润。请使用Excel 2016以上版本打开。</p>
-<p><img src="/img/tools/spfarm.png" alt="养猪表格"></p>
-<p><strong>Note</strong> 打开后，使用步骤:</p>
-<ul>
-<li><p>安全警告->启用内容；</p>
-</li>
-<li><p>点击数据标签->全部刷新 左键单击一次；</p>
-</li>
-<li><p>看17-19行。</p>
-</li>
-</ul>
-<h2 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h2><p>查寻函数使用的代码为:</p>
-<figure class="highlight excel"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">(page as number) as table =></span><br><span class="line"></span><br><span class="line">let</span><br><span class="line">    源 = Json.Document(Web.Contents(<span class="string">"https://api.evemarketer.com/ec/marketstat/json?typeid="</span> & Number.ToText(page) & <span class="string">"®ionlimit=10000002&system=60003760"</span>)),</span><br><span class="line">    源<span class="number">1</span> = 源{<span class="number">0</span>},</span><br><span class="line">    sell = 源<span class="number">1</span>[sell],</span><br><span class="line">    转换为表 = Record.ToTable(sell),</span><br><span class="line">    转置表 = Table.Transpose(转换为表),</span><br><span class="line">    提升的标题 = Table.PromoteHeaders(转置表, [PromoteAllScalars=<span class="built_in">true</span>]),</span><br><span class="line">    更改的类型 = Table.TransformColumnTypes(提升的标题,{{<span class="string">"forQuery"</span>, <span class="built_in">type</span> any}, {<span class="string">"volume"</span>, Int64.Type}, {<span class="string">"wavg"</span>, <span class="built_in">type</span> number}, {<span class="string">"avg"</span>, <span class="built_in">type</span> number}, {<span class="string">"variance"</span>, <span class="built_in">type</span> number}, {<span class="string">"stdDev"</span>, <span class="built_in">type</span> number}, {<span class="string">"median"</span>, <span class="built_in">type</span> number}, {<span class="string">"fivePercent"</span>, <span class="built_in">type</span> number}, {<span class="string">"max"</span>, Int64.Type}, {<span class="string">"min"</span>, <span class="built_in">type</span> number}, {<span class="string">"highToLow"</span>, <span class="built_in">type</span> logical}, {<span class="string">"generated"</span>, Int64.Type}}),</span><br><span class="line">    删除的列 = Table.RemoveColumns(更改的类型,{<span class="string">"forQuery"</span>})</span><br><span class="line">in</span><br><span class="line">    删除的列</span><br></pre></td></tr></tbody></table></figure>
-<p>具体展现规则可以打开数据标签，点击查寻和连接，在查寻中看到源代码。</p>
-<h2 id="下载链接"><a href="#下载链接" class="headerlink" title="下载链接"></a>下载链接</h2><p><a href="https://github.com/ackurdeeve/shared/raw/master/%E5%85%BB%E7%8C%AA%E8%87%AA%E5%8A%A8%E8%AE%A1%E7%AE%97%E8%A1%A8%E6%A0%BC.xlsx" rel="external nofollow noopener noreferrer" target="_blank">养猪自动计算表.xlsx</a></p>
-<h2 id="您可能感兴趣的内容："><a href="#您可能感兴趣的内容：" class="headerlink" title="您可能感兴趣的内容："></a>您可能感兴趣的内容：</h2><h3 id="1-自建游戏加速器"><a href="#1-自建游戏加速器" class="headerlink" title="1. 自建游戏加速器"></a>1. <a href="/201902/proxy4eve/">自建游戏加速器</a></h3><h3 id="2-自建Excel表格获取游戏数据指南"><a href="#2-自建Excel表格获取游戏数据指南" class="headerlink" title="2. 自建Excel表格获取游戏数据指南"></a>2. <a href="/201902/SSOAuthinExcel/">自建Excel表格获取游戏数据指南</a></h3><h2 id="返回主页"><a href="#返回主页" class="headerlink" title="返回主页"></a><a href="https://www.ackurdeeve.com">返回主页</a></h2>
+        <h2 id="GLaDOS-通用网络游戏加速器"><a href="#GLaDOS-通用网络游戏加速器" class="headerlink" title="GLaDOS 通用网络游戏加速器"></a>GLaDOS 通用网络游戏加速器</h2><p>现在扶墙的难度越来越大，SS流量基本已经被精准识别，6月份就封停了不少扶墙服务器。由此看来自建VPS已经不是最佳的选择，第一是白嫖的门槛越来越高，第二是线路好的VPS价格从去年底开始纷纷涨价，鉴于70周年大庆，可能会旋起一翻更迅猛的风暴，找一个临时的机场避避风头还是很有必要的。</p>
+<p>这里推荐一家小众平台<a href="https://glados.network" rel="external nofollow noopener noreferrer" target="_blank">Glados</a>，这家机场稳定运行已经有3年了，不过最近才在TG群里面推广使用,支持收看Netflix。目前这家机场还是邀请注册，不过凭借邀请码可以白嫖的半个月，网络质量还不错，收看油管4K视频也没有什么压力。邀请注册的会员之前可以无限试用，9月份以后可能是用户慢慢多了起来，半个月以内加上了10g的流量限制，测试网络速度也是足够的了。用得好的话可以考虑入手，价格如下，<code>不定期打折活动</code>（目前8折、送1个月Netflix会员）:</p>
+<p><img src="/img/tools/20190909_图2.png" alt="图2"></p>
+<p><strong>注意最长的套餐时间是<code>400天</code>的</strong>，附上14天的试用邀请码<code>2XMF7-U3TO3-NDPA4-GCS2U</code>,<br>注册网址： Glados Network <a href="https://glados.network" rel="external nofollow noopener noreferrer" target="_blank">https://glados.network</a></p>
+<h2 id="机场特点"><a href="#机场特点" class="headerlink" title="机场特点"></a>机场特点</h2><ol>
+<li><strong>流量无限</strong>。<br>超过了套餐的流量后，开始限制速度，网络速度限速1-2Mbps，无法使用Netflix，下个月初恢复。但限速不会导致你不能用，是可以继续低流量扶墙浏览的，总体来说比较良心。</li>
+<li><strong>软件配置简单，支持Clash托管</strong><br>对于普通的用户来说也可以直接添加ss服务器的订阅文件，非常方便。安卓、IOS、Windows以及Mac都可以通过网页指南迅速配置。<br>另外还支持<a href="https://github.com/Fndroid/clash_for_windows_pkg/releases" rel="external nofollow noopener noreferrer" target="_blank">Clash for windows</a>和<a href="https://apps.apple.com/us/app/shadowrocket/id932747118" rel="external nofollow noopener noreferrer" target="_blank">小火箭Shadowrocket</a>导入节点。</li>
+<li><strong>会员福利</strong><br>对于短期<code>试用会员</code>，由于Ios VPN类软件国区下架。机场提供Ios美区账号下载Potatso软件，可以添加机场节点试用；<code>正式会员</code>网站提供企业签名的小火箭永久使用。</li>
+<li><strong>节点自动切换</strong><br>不同于一般的机场，用户需要自己在众多节点中选取（有的多达几百个）。该机场的后台系统将分布在 5 个云计算中心的几百个节点归类为不超过10个，通过后台测试系统自动帮用户切换最佳网络，用户体验非常不错。</li>
+</ol>
+<h2 id="机场测速"><a href="#机场测速" class="headerlink" title="机场测速"></a>机场测速</h2><p>来看看测速，下面是机场自己的测试监控：</p>
+<p><img src="/img/tools/20190909_图3.png" alt="图3"></p>
+<p>高级会员Pro的网络速度是最快的，平均达到<code>42Mbits/s</code>；但是普通会员也不慢，平均也能达到<code>32Mbits/s</code>。收看4k视频完全没有压力。</p>
+<p>下图是Basic用户，也就是我了白天的测试结果，网络环境是华中地区中国电信200M宽带。</p>
+<p><img src="/img/tools/20190909_图4.png" alt="图4"></p>
+<p>速度达到了80Mbits/s，比监控的数据还要高不少，截图的过程中有时候还能够突破100Mbits/s，达到普通用户的带宽极限。</p>
+<h2 id="注册事项"><a href="#注册事项" class="headerlink" title="注册事项"></a>注册事项</h2><p>为了避免白嫖，保证付费用户的利益,该机场目前为<code>手机注册</code>。小伙伴们动心了吗，那么动起手来注册试试吧。也有小伙伴通过接短信的平台（非自己的手机号）注册成功过，如果这样的话建议就不要用这个公共号码购买正式版了，觉得机场还不错再修改为自己的号码购买。</p>
+<p>邀请码上面已经附上了，这里再贴出来一次，14天的试用邀请码</p>
+<p><code>2XMF7-U3TO3-NDPA4-GCS2U</code></p>
+<p>注册网址： Glados Network <a href="https://glados.network" rel="external nofollow noopener noreferrer" target="_blank">https://glados.network</a></p>
+
     </div>
     
     <div class="post-footer">
@@ -246,15 +249,10 @@
 
 <div class="article-nav prev-next-wrap clearfix">
     
-        <a href="/201902/SSOAuthinExcel-2/" class="pre-post btn btn-default" title="EVEOnline ESI Excel教程（2）">
-            <i class="fa fa-angle-left fa-fw"></i><span class="hidden-lg">上一篇</span>
-            <span class="hidden-xs">EVEOnline ESI Excel教程（2）</span>
-        </a>
     
-    
-        <a href="/201902/SSOAuthinExcel/" class="next-post btn btn-default" title="EVEOnline ESI Excel教程">
+        <a href="/201905/dota2chess-roundtest/" class="next-post btn btn-default" title="刀塔自走棋阵容训练工具">
             <span class="hidden-lg">下一篇</span>
-            <span class="hidden-xs">EVEOnline ESI Excel教程</span><i class="fa fa-angle-right fa-fw"></i>
+            <span class="hidden-xs">刀塔自走棋阵容训练工具</span><i class="fa fa-angle-right fa-fw"></i>
         </a>
     
 </div>
@@ -287,7 +285,7 @@
     <div class="widget">
         <h3 class="title">文章目录</h3>
         
-            <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#养猪表格Excel版"><span class="toc-text">养猪表格Excel版</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#代码"><span class="toc-text">代码</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#下载链接"><span class="toc-text">下载链接</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#您可能感兴趣的内容："><span class="toc-text">您可能感兴趣的内容：</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-自建游戏加速器"><span class="toc-text">1. 自建游戏加速器</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-自建Excel表格获取游戏数据指南"><span class="toc-text">2. 自建Excel表格获取游戏数据指南</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#返回主页"><span class="toc-text">返回主页</span></a></li></ol>
+            <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#GLaDOS-通用网络游戏加速器"><span class="toc-text">GLaDOS 通用网络游戏加速器</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#机场特点"><span class="toc-text">机场特点</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#机场测速"><span class="toc-text">机场测速</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#注册事项"><span class="toc-text">注册事项</span></a></li></ol>
             <hr>
             <div>
                 <!-- sidebar -->
