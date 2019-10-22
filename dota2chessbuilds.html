@@ -509,6 +509,13 @@
                             剑圣
                         </div>
                     </div>
+                    <div class="add-build__hero" data-level="2" data-hero-search="BloodSeeker" title="血魔">
+                        <span></span>
+                        <div class="add-build__hero-inner color-uncommon" data-build-hero-inner="BloodSeeker">
+                            <div class="icon-bloodseeker"></div>
+                            血魔
+                        </div>
+                    </div>
                     <div class="add-build__hero" data-level="2" data-hero-search="OgreMagi" title="食人魔法师">
                         <span></span>
                         <div class="add-build__hero-inner color-uncommon" data-build-hero-inner="OgreMagi">
@@ -551,13 +558,6 @@
                             伐木机
                         </div>
                     </div>
-                    <!--                    <div class="add-build__hero" data-level="2" data-hero-search="PainQueen" title="痛苦女王">-->
-                    <!--                        <span></span>-->
-                    <!--                        <div class="add-build__hero-inner color-uncommon" data-build-hero-inner="PainQueen">-->
-                    <!--                            <div class="icon-painqueen"></div>-->
-                    <!--                            痛苦女王-->
-                    <!--                        </div>-->
-                    <!--                    </div>-->
 
                     <!--                    <div class="add-build__hero" data-level="2" data-hero-search="Slardar" title="鱼人守卫">-->
                     <!--                        <span></span>-->
@@ -606,13 +606,6 @@
                     <!--                        <div class="add-build__hero-inner color-uncommon" data-build-hero-inner="Mirana">-->
                     <!--                            <div class="icon-mirana"></div>-->
                     <!--                            米拉娜-->
-                    <!--                        </div>-->
-                    <!--                    </div>-->
-                    <!--                    <div class="add-build__hero" data-level="2" data-hero-search="Lich" title="巫妖">-->
-                    <!--                        <span></span>-->
-                    <!--                        <div class="add-build__hero-inner color-uncommon" data-build-hero-inner="Lich">-->
-                    <!--                            <div class="icon-lich"></div>-->
-                    <!--                            巫妖-->
                     <!--                        </div>-->
                     <!--                    </div>-->
                     <div class="add-build__hero" data-level="3" data-hero-search="Omniknight" title="全能骑士">
@@ -706,13 +699,13 @@
                             灵魂守卫
                         </div>
                     </div>
-<!--                    <div class="add-build__hero" data-level="3" data-hero-search="ShadowFiend" title="影魔">-->
-<!--                        <span></span>-->
-<!--                        <div class="add-build__hero-inner color-rare" data-build-hero-inner="ShadowFiend">-->
-<!--                            <div class="icon-shadowfiend"></div>-->
-<!--                            影魔-->
-<!--                        </div>-->
-<!--                    </div>-->
+                    <!--                    <div class="add-build__hero" data-level="3" data-hero-search="ShadowFiend" title="影魔">-->
+                    <!--                        <span></span>-->
+                    <!--                        <div class="add-build__hero-inner color-rare" data-build-hero-inner="ShadowFiend">-->
+                    <!--                            <div class="icon-shadowfiend"></div>-->
+                    <!--                            影魔-->
+                    <!--                        </div>-->
+                    <!--                    </div>-->
                     <div class="add-build__hero" data-level="3" data-hero-search="SandKing" title="沙王">
                         <span></span>
                         <div class="add-build__hero-inner color-rare" data-build-hero-inner="SandKing">
@@ -825,6 +818,13 @@
                             矮人直升机
                         </div>
                     </div>
+                    <div class="add-build__hero" data-level="5" data-hero-search="Huskar" title="神灵武士">
+                        <span></span>
+                        <div class="add-build__hero-inner color-immortal" data-build-hero-inner="Huskar">
+                            <div class="icon-huskar"></div>
+                            神灵武士
+                        </div>
+                    </div>
                     <div class="add-build__hero" data-level="5" data-hero-search="Io">
                         <span></span>
                         <div class="add-build__hero-inner color-immortal" data-build-hero-inner="Io" title=" 精灵守卫">
@@ -844,6 +844,13 @@
                         <div class="add-build__hero-inner color-immortal" data-build-hero-inner="Visage">
                             <div class="icon-visage"></div>
                             死灵飞龙
+                        </div>
+                    </div>
+                    <div class="add-build__hero" data-level="5" data-hero-search="Lich" title="巫妖">
+                        <span></span>
+                        <div class="add-build__hero-inner color-immortal" data-build-hero-inner="Lich">
+                            <div class="icon-lich"></div>
+                            巫妖
                         </div>
                     </div>
                     <div class="add-build__hero" data-level="5" data-hero-search="Techies" title="地精工程师">
@@ -879,6 +886,13 @@
                         <div class="add-build__hero-inner color-immortal" data-build-hero-inner="Sven">
                             <div class="icon-sven"></div>
                             流浪剑客
+                        </div>
+                    </div>
+                    <div class="add-build__hero" data-level="5" data-hero-search="PainQueen" title="痛苦女王">
+                        <span></span>
+                        <div class="add-build__hero-inner color-immortal" data-build-hero-inner="PainQueen">
+                            <div class="icon-painqueen"></div>
+                            痛苦女王
                         </div>
                     </div>
                 </div>
@@ -1064,6 +1078,8 @@
         "Slark": "鱼人夜行者",
         "Oracle": "神谕者",
         "NyxAssassin": "司夜刺客",
+        "Huskar": "神灵武士",
+        "BloodSeeker": "血魔",
     };
     var class_to_zh = {
         "Assassin": "刺客",
@@ -1160,12 +1176,22 @@
         },
         Naga: {conditions: {"2": "所有友方棋子魔法抗性提升30", "4": "所有友方棋子魔法抗性提升45"}, "is_species": true,},
         Ogre: {conditions: {"2": "任何友方近战棋子死亡都会使食人魔获得效果：最大生命值+25%，攻击力+25%，最多叠加8次",}, "is_species": true,},
-        Orc: {conditions: {"2": "所有友方兽人的最大生命值 +250", "4": "全体友军最大生命值 +250 ",}, "is_species": true,},
+        Orc: {
+            conditions: {
+                "2": "所有友方兽人的最大生命值 +250",
+                "4": "所有友方兽人最大生命值 +250 ",
+                "6": "全体友军最大生命值 +（你的信使当前已损失的生命值）×10 ",
+            }, "is_species": true,
+        },
         Priest: {
             conditions: {"1": "给你的信使施加一个护盾，可以抵挡受到的20%伤害", "2": "如果信使战斗失败受到至少8点伤害，会获得一个随机的贡品",},
             "is_species": false,
         },
-        Shaman: {conditions: {"2": "战斗开始时将一个随机地方棋子便形成青蛙，持续6秒",}, "is_species": false,},
+        Shaman: {
+            conditions: {
+                "2": "战斗开始时将一个随机地方棋子便形成青蛙，持续6秒",
+                "4": "使所有友方萨满祭司棋子获得效果：该棋子死亡时，将击杀它的敌方棋子变形为一个降低1费的随机同星棋子。",
+            }, "is_species": false,},
         Troll: {
             conditions: {"2": "所有友方巨魔的攻击速度 +35", "4": "所有友方的攻击速度 +30", "6": "所有友军获得热血战魂效果，战魂等级等同于友军中星级最高的巨魔战将",},
             "is_species": true,
@@ -1194,8 +1220,8 @@
         Wizard: {conditions: {"2": "使需要4个及以上棋子的种族/职业触发所需要的棋子数-1",}, "is_species": false,},
         Bug: {
             conditions: {
-                "2": "使所有非虫族友方棋子获得效果：该棋子死亡时，如果场上存在与它同名的友方棋子，召唤一只等级相当于（同名棋子中最高等级）的随机虫族棋子。",
-                "4": "使所有虫族友方棋子获得效果：该棋子死亡时，如果场上有与它同名的友方棋子存活，原地召唤一只随机虫族棋子。",
+                "2": "使所有非虫族友方棋子获得效果：该棋子死亡时，如果场上存在与它同名的友方棋子，召唤一只等级相当于存活的同名棋子最高等级或+1。",
+                "4": "使所有虫族友方棋子获得效果：该棋子死亡时，如果场上有与它同名的友方棋子存活，召唤一只等级相当于存活的同名棋子最高等级+1或+2。",
             }, "is_species": true,
         },
     };
@@ -1213,7 +1239,7 @@
         AntiMage: ['Elf', 'DemonHunter',],
         Tiny: ['Element', 'Warrior',],
         Mars: ['God', 'Warrior',],
-        WinterWyvern: ['Dragon', 'Mage',],
+        WinterWyvern: ['Dragon', 'Undead',],
         Crystal: ['Human', 'Mage',],
         BeastMaster: ['Orc', 'Hunter',],
         Juggernaut: ['Orc', 'Warrior',],
@@ -1269,7 +1295,9 @@
         Visage: ['Undead', 'Hunter', 'Dragon',],
         Oracle: ['God', 'Priest',],
         NyxAssassin: ['Bug', 'Assassin',],
-        SandKing: ['Bug', 'Assassin','Beast',]
+        SandKing: ['Bug', 'Assassin', 'Beast',],
+        Huskar: ['Warrior','Troll',],
+        BloodSeeker: ['Orc','Shaman',],
     };
 
     var hero_costs = {
